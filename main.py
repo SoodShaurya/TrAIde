@@ -6,6 +6,7 @@ from src.sentiment_analyzer import SentimentAnalyzer
 from src.data_processor import DataProcessor
 from utils.logger import setup_logger
 import logging
+import os
 from datetime import datetime
 
 def load_config() -> configparser.ConfigParser:
@@ -28,7 +29,7 @@ def main():
         data_processor = DataProcessor()
         
         # Process data for different timeframes
-        timeframes = [1, 7, 30]  # 1 day, 1 week, 1 month
+        timeframes = [1]  # 1 day, 1 week, 1 month
         submissions = reddit_scraper.get_submissions(max(timeframes))
         
         # Analyze sentiments
@@ -39,6 +40,8 @@ def main():
         
         # Save report
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        report_dir = 'reports'
+        os.makedirs(report_dir, exist_ok=True)
         report.to_csv(f'reports/sentiment_report_{timestamp}.csv', index=False)
         logging.info(f"Report generated successfully: sentiment_report_{timestamp}.csv")
         
