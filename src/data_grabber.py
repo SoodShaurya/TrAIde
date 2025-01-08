@@ -2,6 +2,7 @@ import configparser
 import pandas as pd
 import logging
 from src.stock_manager import StockManager
+from nltk.corpus import words
 import os
 
 def load_config() -> configparser.ConfigParser:
@@ -13,10 +14,16 @@ def grab_data():
     config = load_config()
 
     data_dir = "data"
-    os.mkdir(data_dir)
+    os.makedirs(data_dir, exist_ok=True)
 
     stock_manager = StockManager(config['ALPHA_VANTAGE']['api_key'])
     stock_symbols = stock_manager.get_stock_symbols()
 
-    stock_symbols.to_csv(f'{data_dir}/symbols.csv', index=False)
-    logging.info(f"Report generated successfully: symbols_data.csv")
+    with open("data/symbols_data.txt", "w") as file:
+        for item in stock_symbols:
+            if item in words.words():
+                file.write(f"${item}\n")
+            else:
+                file.write(f"{item}\n")
+
+    logging.info(f"Symbols saved successfully: symbols_data.txt")

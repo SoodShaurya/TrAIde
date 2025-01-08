@@ -22,8 +22,8 @@ def main():
         config = load_config()
         
         # Initialize components
-        stock_manager = StockManager(config['ALPHA_VANTAGE']['api_key'])
-        stock_symbols = pd.read_csv("data/symbols_data.csv")
+        with open("data/symbols_data.txt", "r") as file:
+            stock_symbols = {line.strip() for line in file}
         
         reddit_scraper = RedditScraper(dict(config['REDDIT']), stock_symbols)
         sentiment_analyzer = SentimentAnalyzer()
