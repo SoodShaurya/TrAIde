@@ -7,6 +7,7 @@ from src.data_processor import DataProcessor
 from utils.logger import setup_logger
 import logging
 import os
+import pandas as pd
 from datetime import datetime
 
 def load_config() -> configparser.ConfigParser:
@@ -22,7 +23,7 @@ def main():
         
         # Initialize components
         stock_manager = StockManager(config['ALPHA_VANTAGE']['api_key'])
-        stock_symbols = stock_manager.get_stock_symbols()
+        stock_symbols = pd.read_csv("data/symbols_data.csv")
         
         reddit_scraper = RedditScraper(dict(config['REDDIT']), stock_symbols)
         sentiment_analyzer = SentimentAnalyzer()
