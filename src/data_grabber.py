@@ -2,27 +2,10 @@ import configparser
 import pandas as pd
 import logging
 from src.stock_manager import StockManager
-from nltk.corpus import words
+import nltk
 import os
+from config.__init__ import load_config
 
-def load_config() -> configparser.ConfigParser:
-    config_dir = 'config'
-    config_file = os.path.join(config_dir, 'config.ini')
-    template_file = os.path.join(config_dir, 'configtemplate.ini')
-    os.makedirs(config_dir, exist_ok=True)
-    if not os.path.exists(config_file):
-        if os.path.exists(template_file):
-            with open(template_file, 'r') as template:
-                content = template.read()
-            with open(config_file, 'w') as config:
-                config.write(content)
-            print(f"Created {config_file} from {template_file}.")
-        else:
-            raise FileNotFoundError(f"Template file {template_file} not found.")
-    config = configparser.ConfigParser()
-    config.read(config_file)
-    print('config')
-    return config
 
 def grab_data():
     config = load_config()
@@ -33,11 +16,19 @@ def grab_data():
     stock_manager = StockManager(config['ALPHA_VANTAGE']['api_key'])
     stock_symbols = stock_manager.get_stock_symbols()
 
-    with open("data/symbols_data.txt", "w") as file:
+    with open("data/symbols_data.txt", "w+") as file:
         for item in stock_symbols:
-            if item in words.words():
-                file.write(f"${item}\n")
-            else:
-                file.write(f"{item}\n")
+            try:
+                if item.lower() in nltk.corpus.words.words():
+                    file.write(f"${item}\n")
+                    print(f"${item}")
+                else:
+                    file.write(f"{item}\n")
+                    print(f"{item}")
+            except Exception as e:
+                logging.error(f"Error when grabbing stock symbols: {e}")
+                if Exception == LookupError:
+                    logging.error("Couldn't find words corpus.")
+                    nltk.download("words")
 
     logging.info(f"Symbols saved successfully: symbols_data.txt")

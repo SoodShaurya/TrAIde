@@ -4,15 +4,22 @@ import configparser
 from typing import Dict
 
 def load_config() -> configparser.ConfigParser:
-    """Load and validate configuration from config.ini"""
+    config_dir = 'config'
+    config_file = os.path.join(config_dir, 'config.ini')
+    template_file = os.path.join(config_dir, 'configtemplate.ini')
+    os.makedirs(config_dir, exist_ok=True)
+    if not os.path.exists(config_file):
+        if os.path.exists(template_file):
+            with open(template_file, 'r') as template:
+                content = template.read()
+            with open(config_file, 'w') as config:
+                config.write(content)
+            print(f"Created {config_file} from {template_file}.")
+        else:
+            raise FileNotFoundError(f"Template file {template_file} not found.")
     config = configparser.ConfigParser()
-    config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
-    
-    if not os.path.exists(config_path):
-        raise FileNotFoundError(f"Configuration file not found at {config_path}")
-    
-    config.read(config_path)
-    _validate_config(config)
+    config.read(config_file)
+    print('config')
     return config
 
 def _validate_config(config: configparser.ConfigParser) -> None:

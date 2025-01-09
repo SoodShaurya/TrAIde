@@ -11,7 +11,7 @@ def setup_logger():
     log_file = f'logs/sentiment_analysis_{datetime.now():%Y%m%d}.log'
     handler = logging.FileHandler(log_file)
     logging.basicConfig(
-        handlers=[handler],
+        handlers=[handler, logging.StreamHandler()],
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
