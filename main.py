@@ -9,10 +9,19 @@ import logging
 import os
 import pandas as pd
 from datetime import datetime
+import os
+
 
 def load_config() -> configparser.ConfigParser:
+    """Load and validate configuration from config.ini"""
     config = configparser.ConfigParser()
-    config.read('config/config.ini')
+    config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
+    
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"Configuration file not found at {config_path}")
+    
+    config.read(config_path)
+    _validate_config(config)
     return config
 
 def main():
@@ -30,7 +39,7 @@ def main():
         data_processor = DataProcessor()
         
         # Process data for different timeframes
-        timeframes = [1]  # 1 day, 1 week, 1 month
+        timeframes = [1]
         submissions = reddit_scraper.get_submissions(max(timeframes))
         
         # Analyze sentiments
