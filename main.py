@@ -51,5 +51,4 @@ def main():
         raise
 
 if __name__ == "__main__":
-    grab_data()
     main()
