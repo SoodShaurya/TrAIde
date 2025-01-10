@@ -7,7 +7,7 @@ from src.data_processor import DataProcessor
 from config.__init__ import load_config
 from pymongo import MongoClient
 from utils.logger import setup_logger
-from src.timers import Timer
+from utils.timers import Timer
 
 import logging
 import os
@@ -18,7 +18,8 @@ from src.data_grabber import grab_data
 
 def initialize_mongodb():
     # Initialize MongoDB connection
-    client = MongoClient("mongodb://localhost:27017/")  # Replace with your connection string
+    logging.info("Initializing MongoDB connection.")
+    client = MongoClient("mongodb://localhost:27017")  # Replace with your connection string
     db = client["global"]  # Database name
     collection = db["posts"]  # Collection name
     return collection
@@ -42,7 +43,7 @@ def main():
             data_processor
         )
         
-        print("Starting Reddit stream...")
+        logging.info("Starting Reddit stream...")
         reddit_scraper.stream_content()
         
     except Exception as e:

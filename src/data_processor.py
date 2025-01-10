@@ -19,10 +19,10 @@ class DataProcessor:
             item_data['compound_score'] = sentiment_scores['compound_score']
             
             # Console output
-            print(f"\nNew {item_data['type']} processed:")
-            print(f"Content: {item_data['content'][:200]}...")
-            print(f"Tickers: {item_data['tickers']}")
-            print(f"Sentiment: {sentiment_scores}")
+            logging.info(f"\nNew {item_data['type']} processed:")
+            logging.info(f"Content: {item_data['content'][:200]}...")
+            logging.info(f"Tickers: {item_data['tickers']}")
+            logging.info(f"Sentiment: {sentiment_scores}")
             
             # Store in MongoDB
             self.collection.insert_one(item_data)

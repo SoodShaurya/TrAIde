@@ -21,7 +21,6 @@ def grab_data():
 
     with open("data/symbols_data.txt", "w+") as file:
         for item in stock_symbols:
-            print(item)
             try:
                 if item.lower() in words:
                     file.write(f"${item} \n")
@@ -29,6 +28,5 @@ def grab_data():
                     file.write(f" {item} \n")
             except Exception as e:
                 logging.error(f"Couldn't process item {item}: {e}")
-                print(f"Couldn't process item {item}: {e}")
 
     logging.info(f"Symbols saved successfully: symbols_data.txt")

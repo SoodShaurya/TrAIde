@@ -9,9 +9,10 @@ def setup_logger():
     
     # Setup logging configuration
     log_file = f'logs/sentiment_analysis_{datetime.now():%Y%m%d}.log'
-    handler = logging.FileHandler(log_file)
+    filehandler = logging.FileHandler(log_file)
+    streamhandler = logging.StreamHandler()
     logging.basicConfig(
-        handlers=[handler],
+        handlers=[filehandler, streamhandler],
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )

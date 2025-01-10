@@ -10,20 +10,17 @@ class Timer:
     def start(self, message = ""):
         """Start the timer. Can also log messages"""
         if message != "":
-            print(message)
             logging.info(message)
         self.startTime = datetime.now()
     
     def end(self, message = ""):
         """End the timer. Can also log messages"""
         if message != "":
-            print(message)
             logging.info(message)
         self.endTime = datetime.now()
 
     def get_elapsed_time(self, message = ""):
         """Return elapsed time in seconds. Log messages and the time will replace %m"""
         if message != "":
-            print(message.replace("%m", str((self.endTime - self.startTime).seconds)))
             logging.info(message.replace("%m", str((self.endTime - self.startTime).seconds)))
         return (self.endTime - self.startTime).seconds

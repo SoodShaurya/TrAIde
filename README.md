@@ -1,16 +1,23 @@
 # moneymaker
  
-TODO
+## TODO
+### backend
+
 - weightage system for more important people and higher comment scores
-- write a model for sentiment analysis dedicated to market terms
 - write automated symbol caching system (time interval, every day?)
+
+### frontend
 - webUI 
-- update sub-list and distilbert
-- perform sentiment on streamed submissions
+- cards for each symbol and search bar
+- 
 
 
-COMPLETED
+#### low priority
+- write a model for sentiment analysis dedicated to market terms
+
+### completed
 - everything before we had a todo
 - wrote a timer
-- modify structure to run continuosly
-- mongodb
+- update sub-list and distilbert
+- streaming rewrite
+- wrote script to run continuosly
