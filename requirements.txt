@@ -5,3 +5,5 @@ requests
 vaderSentiment
 pymongo
 transformers
+pytorch
+tensorflow
