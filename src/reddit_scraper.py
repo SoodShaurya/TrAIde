@@ -19,10 +19,10 @@ class RedditScraper:
         words = text.split()
         return [word for word in words if word in self.stock_symbols]
 
-    def get_submissions(self, timeframe: int) -> List[Dict]:
+    def get_submissions(self, days: int = 0, hours: int = 0) -> List[Dict]:
         """Scrape Reddit submissions and comments within timeframe"""
         submissions_data = []
-        start_time = datetime.utcnow() - timedelta(days=timeframe)
+        start_time = datetime.utcnow() - timedelta(days=days, hours=hours)
 
         for subreddit_name in self.subreddits:
             try:

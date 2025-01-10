@@ -4262,7 +4262,6 @@ gonk
 goo
 good
 goof
-goog
 gook
 gool
 goon

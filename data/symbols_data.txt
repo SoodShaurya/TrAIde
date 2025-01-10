@@ -28,10 +28,10 @@
  LOGI 
  NEOV 
  ILMNV 
-$OP 
+ OP 
  MXL 
  SEMR 
-$THAR 
+ THAR 
  HDB 
  AMC 
  DPCSU 
@@ -54,7 +54,7 @@ $THAR
  DRIO 
  TY-P 
  TNON 
-$NOTE 
+ NOTE 
  F 
  SPXC 
  ANG-P-B 
@@ -63,13 +63,13 @@ $NOTE
  PMT-P-A 
  IIPR 
  ENG 
-$TOST 
+ TOST 
  API 
  KTB 
  CLW 
  FONR 
  PHVS 
-$SIX 
+ SIX 
  SCLX 
  AIMAW 
  EHI-R-W 
@@ -87,10 +87,10 @@ $SIX
  NVR 
  GXAI 
  OLO 
-$CALX 
+ CALX 
  HOVR 
  NBTB 
-$REX 
+ REX 
  AEHA 
  COF-P-J 
  GEF-B 
@@ -110,7 +110,7 @@ $REX
  RCKTW 
  AVACU 
  EDU 
-$SPRY 
+ SPRY 
  ATMC 
  BECN 
  BLBD 
@@ -131,12 +131,12 @@ $SPRY
  DNUT 
  PRTH 
  SBIG 
-$MESA 
+ MESA 
  BUJAR 
  UONE 
  RENEW 
  AHCO 
-$DAY 
+ DAY 
  CMCM 
  ZGN 
  BRIF 
@@ -157,7 +157,7 @@ $DAY
  NPCT 
  FL 
  PIEQ 
-$CENT 
+ CENT 
  QOMOR 
  RSVR 
  YGMZ 
@@ -173,23 +173,23 @@ $CENT
  PII 
  WHLRL 
  CXT-W 
-$CARR 
+ CARR 
  FHN-P-F 
  PLMR 
  CSR 
  IMTX 
  NUVL 
-$SO 
+ SO 
  MOBX 
  AFBI 
  WVVI 
  SSP 
  FSI 
-$TAX 
+ TAX 
  BGI 
  TDUP 
  VIRC 
-$JAZZ 
+ JAZZ 
  GCMG 
  LUCYW 
  DAVE 
@@ -212,7 +212,7 @@ $JAZZ
  WYY 
  AMPGW 
  MBAVW 
-$WALD 
+ WALD 
  MFICL 
  TWST 
  CFR 
@@ -223,14 +223,14 @@ $WALD
  PSA-P-J 
  FG-W 
  CYH 
-$GO 
-$MACK 
+ GO 
+ MACK 
  XNCR 
  LVLU 
  HOLOW 
  VALU 
-$ZIP 
-$COR 
+ ZIP 
+ COR 
  EXPE 
  CRBP 
  NAUT 
@@ -289,14 +289,14 @@ $COR
  GBR 
  BYON 
  NXU 
-$BLIN 
+ BLIN 
  EXE 
  TRN 
  HZO 
  EQ 
  GLACU 
  SCM 
-$ELF 
+ ELF 
  MWA 
  PBA 
  AQN 
@@ -304,7 +304,7 @@ $ELF
  THTX 
  ATYR 
  MLSS 
-$WYNN 
+ WYNN 
  NVST 
  HSBC 
  IDN 
@@ -335,7 +335,7 @@ $WYNN
  TCBX 
  YYAI 
  CFFSU 
-$SEER 
+ SEER 
  LTRPA 
  DFFN 
  EXC 
@@ -346,14 +346,14 @@ $SEER
  VICI 
  MEOA 
  HAFN 
-$TILE 
+ TILE 
  ZDGE 
  MRCY 
  QRTEA 
  WSBF 
  CTXR 
  CCBG 
-$KOP 
+ KOP 
  LGF-A 
  AIG 
  MTB-P-H 
@@ -365,7 +365,7 @@ $KOP
  HT 
  CRVL 
  RNR 
-$AEON 
+ AEON 
  CRWD 
  VIASP 
  SKYE 
@@ -393,7 +393,7 @@ $AEON
  PPBI 
  AAT 
  SB 
-$IFF 
+ IFF 
  PACX 
  FGBI 
  SBEV 
@@ -427,7 +427,7 @@ $IFF
  SLNG 
  GCMGW 
  PAXS 
-$OUST 
+ OUST 
  PONOU 
  PPYAU 
  INO 
@@ -435,22 +435,22 @@ $OUST
  SMR 
  CISSV 
  PUBM 
-$FOUR 
+ FOUR 
  ETWO 
  OEC 
  SNV 
  CUBI 
  TGT 
-$CART 
+ CART 
  BSET 
  PSEC-P-A 
  AGNCO 
  BX 
  ESGRO 
  INVH 
-$COLL 
+ COLL 
  PPSI 
-$OPT 
+ OPT 
  NVTS 
  GORO 
  FLX 
@@ -460,9 +460,9 @@ $OPT
  FLD 
  HIG 
  DESP 
-$BE 
+ BE 
  EVEX-WS 
-$AROW 
+ AROW 
  NTIC 
  CRESY 
  GSIW 
@@ -474,36 +474,36 @@ $AROW
  RBC 
  GLE 
  RGTIW 
-$TOP 
+ TOP 
  FTEL 
  EJH 
  EXEL 
  LVWR-WS 
-$ALAR 
+ ALAR 
  REGCO 
  ZEOWW 
-$BODY 
+ BODY 
  ELPW 
  LNC 
  ACOG 
  GRP-U 
  K-W 
  WLDS 
-$ZAP 
+ ZAP 
  ICNC-U 
  CMPX 
  MS-P-K 
  MREO 
  CMBM 
  APLU 
-$PAYS 
+ PAYS 
  OLPX 
  PRCS 
  GENI 
-$TAP 
+ TAP 
  ESBA 
-$TERN 
-$EBON 
+ TERN 
+ EBON 
  SASI 
  FLG-P-U 
  CRCT 
@@ -521,7 +521,7 @@ $EBON
  FFIV 
  JBSS 
  SPR 
-$ALE 
+ ALE 
  AGFS 
  CITEW 
  EONRWS 
@@ -560,7 +560,7 @@ $ALE
  NPWR-WS 
  FLDDU 
  FTRE 
-$RIG 
+ RIG 
  FGF 
  QOMOW 
  MS 
@@ -591,14 +591,14 @@ $RIG
  MMS 
  OPBK 
  ET-P-I 
-$ID 
+ ID 
  DEVS 
  AXDX 
  OBT 
  NHC 
  MITK 
  RANGU 
-$ALTS 
+ ALTS 
  BIGC 
  JHG 
  WIMI 
@@ -637,13 +637,13 @@ $ALTS
  ZTS 
  SISI 
  ED 
-$GRAB 
+ GRAB 
  GFR 
-$SIMA 
+ SIMA 
  HUMAW 
  CMMB 
  GODNU 
-$EME 
+ EME 
  NFGC 
  DXPE 
  SWTX 
@@ -674,7 +674,7 @@ $EME
  INN-P-F 
  OXBR 
  WFC-P-L 
-$NE 
+ NE 
  TSLG 
  OUST-WS 
  CAAP 
@@ -687,7 +687,7 @@ $NE
  TC 
  BEATW 
  ADNT 
-$CAN 
+ CAN 
  BBIO 
  NWGL 
  PACB 
@@ -715,7 +715,7 @@ $CAN
  RILYP 
  PCB 
  DDT 
-$ANTE 
+ ANTE 
  SLXN 
  IMRX 
  SES 
@@ -725,10 +725,10 @@ $ANTE
  RVMD 
  BIDD 
  LSH 
-$PLAY 
+ PLAY 
  QRHC 
  EMBKW 
-$TROW 
+ TROW 
  EXTR 
  DUK-P-A 
  JFIN 
@@ -768,7 +768,7 @@ $TROW
  SWAGW 
  CPAC 
  AUUDW 
-$MASK 
+ MASK 
  WRB-P-H 
  ODFL 
  ZK 
@@ -783,28 +783,28 @@ $MASK
  ASMB 
  EMBC 
  MNKD 
-$DUO 
+ DUO 
  VNT 
  AAOI 
-$COLD 
+ COLD 
  PTN 
  PWOD 
  PLMIW 
  RDVT 
  OPINL 
-$FINS 
+ FINS 
  ALVOW 
  PRLH 
  ALCY 
-$GEO 
+ GEO 
  TAC 
  BAOS 
  BHFAN 
  SCMAU 
  HPP 
  HUBC 
-$HES 
-$BAM 
+ HES 
+ BAM 
  JWN 
  LGCL 
  TKR 
@@ -835,7 +835,7 @@ $BAM
  ARL 
  FLACW 
  PKST 
-$MAYS 
+ MAYS 
  BOWNR 
  VSH 
  CPRI 
@@ -863,12 +863,12 @@ $MAYS
  CCS 
  HPAIW 
  BFH 
-$CUB 
+ CUB 
  FNV 
  CCL 
  RHE 
  CLVT 
-$COP 
+ COP 
  STI 
  BENF 
  SATX 
@@ -892,14 +892,14 @@ $COP
  MYTE 
  ACAD 
  CRC 
-$AR 
+ AR 
  PBMWW 
  QIPT 
  EQH 
  VERV 
  VMGAW 
  JOBY-WS 
-$TWIN 
+ TWIN 
  HG 
  HYPR 
  VGZ 
@@ -968,26 +968,26 @@ $TWIN
  MITN 
  NMIH 
  ULTA 
-$HAE 
+ HAE 
  PFXNL 
-$TEAM 
+ TEAM 
  UMH 
  AFJKR 
  PSX 
  WST 
  DRDBU 
-$LODE 
+ LODE 
  SGHC 
  MUR 
  BNRG 
  HPE 
  ARKO 
-$CANG 
+ CANG 
  LU 
  FLNT 
  NTWO 
  CIA 
-$BILL 
+ BILL 
  AXTI 
  HEPA 
  ING 
@@ -1039,7 +1039,7 @@ $BILL
  LCNB 
  CGBD 
  SKT 
-$UNIT 
+ UNIT 
  HSDT 
  CBZ 
  BOKF 
@@ -1047,12 +1047,12 @@ $UNIT
  RBBN 
  ATMCU 
  CPSS 
-$SWAG 
+ SWAG 
  ATCO-P-H 
  ZIMV 
  AMGN 
  HASI 
-$AAL 
+ AAL 
  SHG 
  LXFR 
  IRM 
@@ -1063,13 +1063,13 @@ $AAL
  CNK 
  CPRT 
  ECCU 
-$BOH 
+ BOH 
  MCACU 
  SGMT 
  ICUCW 
  FSV 
  KURA 
-$BIRD 
+ BIRD 
  AUST 
  POLEW 
  CDNS 
@@ -1080,7 +1080,7 @@ $BIRD
  TRMK 
  DPCS 
  UTSI 
-$SPOT 
+ SPOT 
  HCWB 
  HL 
  CIO-P-A 
@@ -1105,7 +1105,7 @@ $SPOT
  EBF 
  NTEST 
  BBAI-WS 
-$ADD 
+ ADD 
  ALRN 
  OBIO 
  CYRX 
@@ -1123,7 +1123,7 @@ $ADD
  LZ 
  DSKE 
  MOG-B 
-$MIND 
+ MIND 
  AMH-P-H 
  IINN 
  SLI 
@@ -1137,7 +1137,7 @@ $MIND
  BZ 
  GOEV 
  PSHG 
-$IT 
+ IT 
  PLSE 
  SMWB 
  APTV 
@@ -1149,7 +1149,7 @@ $IT
  MGR 
  AYTU 
  NVT 
-$EDIT 
+ EDIT 
  TBCH 
  FELE 
  ALFUW 
@@ -1171,13 +1171,13 @@ $EDIT
  NETD 
  ISRL 
  ARCK 
-$WASH 
+ WASH 
  DSYWW 
  BHP 
  GGT-R-W 
  CRML 
  AXS 
-$DASH 
+ DASH 
  NDMO 
  AMSC 
  HBAN 
@@ -1191,31 +1191,31 @@ $DASH
  PLG 
  TCRX 
  HGV 
-$EGO 
+ EGO 
  TBMCU 
  EQH-P-A 
  AACT 
  TSIBW 
-$COO 
+ COO 
  EQNR 
  NVVEW 
  ORLA 
  THS 
  AREB 
-$SEAT 
+ SEAT 
  PW-P-A 
  NWFL 
-$YELP 
+ YELP 
  GSRTR 
  IONQ 
  XOMAO 
-$WOK 
+ WOK 
  SPKLW 
-$HOOK 
+ HOOK 
  SWVLW 
  HSII 
  BSLKW 
-$ALIT 
+ ALIT 
  EVTL 
  BON 
  HOTH 
@@ -1228,7 +1228,7 @@ $ALIT
  ONON 
  DTSQU 
  EXEEL 
-$DAL 
+ DAL 
  MSSAU 
  STRRP 
  CVIIW 
@@ -1238,7 +1238,7 @@ $DAL
  AZTA 
  NSYS 
  SEAL-P-A 
-$BEST 
+ BEST 
  IRDM 
  MRVL 
  CNMD 
@@ -1252,8 +1252,8 @@ $BEST
  BSVN 
  VYX 
  ZBZX 
-$RAND 
-$FICO 
+ RAND 
+ FICO 
  PBR-A 
  ASB-P-E 
  BZUN 
@@ -1264,18 +1264,18 @@ $FICO
  AMJB 
  ECCW 
  UE 
-$AMPS 
+ AMPS 
  TCVA 
  HMAC 
  WY 
  DYCQ 
  ITRG 
  FTII 
-$GEL 
+ GEL 
  IPXXW 
  GHLD 
  OTRK 
-$ARE 
+ ARE 
  SHW 
  GECCO 
  WYTC 
@@ -1284,7 +1284,7 @@ $ARE
  XYF 
  KW 
  SXTC 
-$FATE 
+ FATE 
  CYCN 
  CTKB 
  FLGT 
@@ -1292,7 +1292,7 @@ $FATE
  MPX 
  NXLIW 
  FRST 
-$GAIN 
+ GAIN 
  BBLG 
  SFM 
  GBNY 
@@ -1352,9 +1352,9 @@ $GAIN
  BRK-B 
  CHARR 
  CARV 
-$VERB 
+ VERB 
  WHLRD 
-$CASH 
+ CASH 
  GTLS 
  BHM 
  XTKG 
@@ -1364,7 +1364,7 @@ $CASH
  CVM 
  RILYZ 
  WWACU 
-$TAIT 
+ TAIT 
  ABCL 
  STRT 
  CZR 
@@ -1376,10 +1376,10 @@ $TAIT
  ACIU 
  ADAP 
  EBR 
-$DOLE 
+ DOLE 
  PYXS 
  SCNX 
-$STEP 
+ STEP 
  SBGI 
  GEF 
  TSBK 
@@ -1436,7 +1436,7 @@ $STEP
  AMST 
  DYNX 
  SSD 
-$POOL 
+ POOL 
  MDV 
  UNB 
  MVSTW 
@@ -1457,17 +1457,17 @@ $POOL
  MNSB 
  ECC-P-D 
  DMYY 
-$CUZ 
+ CUZ 
  MOH 
  OXLCN 
  ASBA 
  SYRA 
  SOHO 
-$UP 
+ UP 
  GRMN 
  OCCIN 
  SONM 
-$HOUR 
+ HOUR 
  VRE 
  CIM-P-C 
  SABRP 
@@ -1486,7 +1486,7 @@ $HOUR
  GETY 
  GLLIU 
  JETU 
-$PRIM 
+ PRIM 
  BNAIW 
  MMLP 
  SHFSW 
@@ -1509,7 +1509,7 @@ $PRIM
  ALDFU 
  CACC 
  DSAQ-U 
-$BABA 
+ BABA 
  GIGGU 
  BSX 
  HQI 
@@ -1527,7 +1527,7 @@ $BABA
  ENGNW 
  YI 
  BKKT-WS 
-$RENT 
+ RENT 
  GSK 
  ANF 
  NBSTW 
@@ -1558,10 +1558,10 @@ $RENT
  MPW 
  LCUT 
  STLD 
-$OS 
+ OS 
  CLRCW 
  LANV 
-$KIND 
+ KIND 
  MEOAW 
  WPP 
  USAS 
@@ -1590,7 +1590,7 @@ $KIND
  NETDW 
  SRE 
  FLS 
-$ICON 
+ ICON 
  ANNX 
  ULY 
  AVPT 
@@ -1598,7 +1598,7 @@ $ICON
  CISS 
  OVV 
  KITT 
-$LUCK 
+ LUCK 
  MTNB 
  NRUC 
  ALLO 
@@ -1628,13 +1628,13 @@ $LUCK
  FLAG-WS 
  NTB 
  AIV 
-$WEST 
+ WEST 
  UI 
-$FOLD 
+ FOLD 
  PPIH 
  FTHM 
  NAII 
-$SKIN 
+ SKIN 
  APLMW 
  PPL 
  ENTXW 
@@ -1659,13 +1659,13 @@ $SKIN
  PRAA 
  SFBC 
  LBBBU 
-$AS 
+ AS 
  RWTN 
  CHT 
  SCVL 
  MUFG 
  PAHC 
-$HON 
+ HON 
  HUHU 
  AGM 
  PRDO 
@@ -1679,7 +1679,7 @@ $HON
  SONN 
  OPTT 
  GAINN 
-$HAIN 
+ HAIN 
  TFINP 
  GLNG 
  RDN 
@@ -1691,7 +1691,7 @@ $HAIN
  LMT 
  TMAC 
  YOTAU 
-$SELF 
+ SELF 
  HSAI 
  CRGX 
  HWC 
@@ -1705,11 +1705,11 @@ $SELF
  SVT 
  BP 
  HEI-A 
-$ELS 
+ ELS 
  CTV-WS 
  CHSCN 
  CGBDL 
-$GIB 
+ GIB 
  ILLR 
  SSBI 
  THCH 
@@ -1722,14 +1722,14 @@ $GIB
  INSG 
  MBLY 
  SCWX 
-$ME 
+ ME 
  PBR 
-$LAND 
+ LAND 
  VLD-WS 
  EDTK 
  NWS 
-$HUBS 
-$LITE 
+ HUBS 
+ LITE 
  INTZ 
  FLDD 
  MBOT 
@@ -1751,7 +1751,7 @@ $LITE
  GUG 
  VLGEA 
  LDER 
-$OMER 
+ OMER 
  MOV 
  ADV 
  KLIC 
@@ -1760,7 +1760,7 @@ $OMER
  SONY 
  CCLDP 
  AUPH 
-$AE 
+ AE 
  EQIX 
  KNX 
  EEIQ 
@@ -1768,7 +1768,7 @@ $AE
  MTC 
  VZLA 
  A 
-$CADE 
+ CADE 
  EPAM 
  BKV 
  GASS 
@@ -1783,14 +1783,14 @@ $CADE
  WMK 
  ROP 
  ACNB 
-$LOOP 
-$JOB 
+ LOOP 
+ JOB 
  CODI-P-C 
  ARLO 
  PEPLW 
  AFMD 
-$FACT 
-$KOSS 
+ FACT 
+ KOSS 
  TOYO 
  ARTW 
  SD 
@@ -1811,15 +1811,15 @@ $KOSS
  GLDD 
  LSEA 
  ATMU 
-$RUM 
-$CITE 
+ RUM 
+ CITE 
  VVV 
  ACDC 
  SDAWW 
  LDOS 
  TT 
  UBCP 
-$CAT 
+ CAT 
  BRKHW 
  CSLMW 
  MLP 
@@ -1845,26 +1845,26 @@ $CAT
  CYCC 
  FRPH 
  STNG 
-$PLUS 
+ PLUS 
  SCYX 
-$DOCS 
+ DOCS 
  BWMN 
  CCV 
  WMPN 
-$SEG 
+ SEG 
  CHRW 
  MRAM 
  SBFM 
-$ALTO 
+ ALTO 
  INDV 
-$MA 
+ MA 
  PCTY 
  RCM 
  WHD 
  KTTA 
  PAVM 
  ADAG 
-$CHE 
+ CHE 
  INSP 
  OAK-P-B 
  DTG 
@@ -1872,7 +1872,7 @@ $CHE
  MDU 
  ALTI 
  LSTA 
-$ROK 
+ ROK 
  SKWD 
  ADIL 
  CIM 
@@ -1886,7 +1886,7 @@ $ROK
  ENTG 
  ERJ 
  YUM 
-$ERAS 
+ ERAS 
  AMRN 
  ZTEST 
  LUXHP 
@@ -1895,7 +1895,7 @@ $ERAS
  DCBO 
  MLACU 
  FHN-P-E 
-$CHEF 
+ CHEF 
  VNCE 
  XXII 
  BHVN 
@@ -1903,10 +1903,10 @@ $CHEF
  ADALU 
  DMLP 
  JOBY 
-$RES 
+ RES 
  CSTE 
-$KEN 
-$GELS 
+ KEN 
+ GELS 
  NXPI 
  PCG-P-H 
  OACCU 
@@ -1921,7 +1921,7 @@ $GELS
  UUUU 
  FNGR 
  ONMD 
-$SITE 
+ SITE 
  AHR 
  ACXP 
  AP 
@@ -1938,7 +1938,7 @@ $SITE
  BZH 
  INTT 
  BANF 
-$KNOP 
+ KNOP 
  NXT(EXP20091224) 
  FRES 
  VNO-P-L 
@@ -1954,7 +1954,7 @@ $KNOP
  RLAY 
  BTTR 
  EQV 
-$TUSK 
+ TUSK 
  SKE 
  CWK 
  NCPLW 
@@ -1972,7 +1972,7 @@ $TUSK
  CLSK 
  CTRE 
  CRDL 
-$NOW 
+ NOW 
  WVVIP 
  ARBGU 
  INLX 
@@ -2008,7 +2008,7 @@ $NOW
  ACU 
  PRA 
  VIOT 
-$MI 
+ MI 
  CBLL 
  ADSK 
  MBI 
@@ -2020,8 +2020,8 @@ $MI
  CRHC-U 
  MDGL 
  FBIO 
-$MIST 
-$AN 
+ MIST 
+ AN 
  LDRR 
  LPCN 
  LMACW 
@@ -2048,13 +2048,13 @@ $AN
  GOLLQ 
  LUNRW 
  TNC 
-$PAL 
+ PAL 
  CVS 
  AIP 
  FREY 
  CNM 
  IPA 
-$LIND 
+ LIND 
  CEIX 
  AGM-P-F 
  BGFV 
@@ -2094,7 +2094,7 @@ $LIND
  IVCAW 
  RITM-P-B 
  INTJ 
-$BOW 
+ BOW 
  BIDU 
  FOXO 
  OCGN 
@@ -2103,7 +2103,7 @@ $BOW
  NNOV 
  RHP 
  VRTX 
-$FORM 
+ FORM 
  LFLY 
  AVNW 
  DSWL 
@@ -2117,7 +2117,7 @@ $FORM
  SLND-WS 
  APGB-WS 
  CACI 
-$RAVE 
+ RAVE 
  WLY 
  ARQ 
  ISSC 
@@ -2143,14 +2143,14 @@ $RAVE
  YYGH 
  SPLP 
  DAKT 
-$LUNG 
+ LUNG 
  REZI 
  ARDT 
  AVRO 
  OMAB 
  RIO 
  UXIN 
-$TEF 
+ TEF 
  CDE 
  UROY 
  USNA 
@@ -2177,8 +2177,8 @@ $TEF
  CBRL 
  PESI 
  AMTX 
-$SOC 
-$SOPH 
+ SOC 
+ SOPH 
  DLR-P-J 
  CHRO 
  VLTO 
@@ -2190,7 +2190,7 @@ $SOPH
  SAMG 
  KULR 
  FICV 
-$GREE 
+ GREE 
  ABLLW 
  SQFTP 
  TIRX 
@@ -2214,13 +2214,13 @@ $GREE
  BILI 
  VKTX 
  SABR 
-$SNOW 
+ SNOW 
  WMS 
  JFBR 
  MDAIW 
  PTHRW 
  EZPW 
-$WELL 
+ WELL 
  BCYC 
  FFIN 
  AQNA 
@@ -2228,14 +2228,14 @@ $WELL
  ATEST-H 
  BDTX 
  MTH 
-$CARD 
+ CARD 
  SAIHW 
  CXT 
  LZM-WS 
  AUTL 
  NHTC 
  NURO 
-$SURF 
+ SURF 
  THG 
  SLDB 
  PSBD 
@@ -2251,7 +2251,7 @@ $SURF
  DAO 
  NOVVR 
  SPGC 
-$MAR 
+ MAR 
  LEXXW 
  VENU 
  LAMR 
@@ -2270,7 +2270,7 @@ $MAR
  GATO 
  LILAK 
  AEHR 
-$GOOG 
+ GOOG 
  AWRE 
  RKT 
  METCV 
@@ -2278,7 +2278,7 @@ $GOOG
  HP 
  KARO 
  CRMT 
-$RIOT 
+ RIOT 
  ARMP 
  IH 
  NBY 
@@ -2293,7 +2293,7 @@ $RIOT
  MTRX 
  BLDP 
  APD 
-$SON 
+ SON 
  L 
  APLM 
  CCRN 
@@ -2311,7 +2311,7 @@ $SON
  AULT-P-D 
  TRX 
  ARDX 
-$AGIO 
+ AGIO 
  FXCO 
  SCCC 
  NOVT 
@@ -2330,14 +2330,14 @@ $AGIO
  SLNH 
  FDS 
  PEBO 
-$SWIM 
+ SWIM 
  D 
  ZBH 
  GRFS 
  AMKR 
  ACRV 
  APPN 
-$HUM 
+ HUM 
  KVACU 
  VIST 
  ALKS 
@@ -2347,10 +2347,10 @@ $HUM
  ATR 
  NRSNW 
  ZZZ 
-$ALPS 
+ ALPS 
  VMD 
  ONDS 
-$BROG 
+ BROG 
  AWX 
  STRL 
  ABR-P-D 
@@ -2359,11 +2359,11 @@ $BROG
  CCZ 
  SQM 
  BHRB 
-$SKY 
+ SKY 
  SPAI 
  CMG 
  TPIC 
-$MAG 
+ MAG 
  SGRY 
  MLTX 
  BXC 
@@ -2376,7 +2376,7 @@ $MAG
  PBFS 
  LATGU 
  CATO 
-$WOLF 
+ WOLF 
  SIEB 
  BRTX 
  HBNC 
@@ -2393,13 +2393,13 @@ $WOLF
  BAER 
  HSON 
  UNM 
-$NOG 
+ NOG 
  CHCI 
  AMEH 
  TDW 
  SABSW 
-$RAY 
-$PEP 
+ RAY 
+ PEP 
  RCON 
  SPKLU 
  PFH 
@@ -2409,11 +2409,11 @@ $PEP
  XERS 
  CHR 
  MGRC 
-$OPAL 
-$BOX 
+ OPAL 
+ BOX 
  CMRE-P-D 
  FORLU 
-$GET 
+ GET 
  SPGI 
  EVGRU 
  METCL 
@@ -2422,9 +2422,9 @@ $GET
  THRY 
  POAI 
  PSA-P-F 
-$AVA 
+ AVA 
  XRX 
-$LI 
+ LI 
  TEX 
  AGNCM 
  FLAC 
@@ -2452,15 +2452,15 @@ $LI
  WFC-P-Z 
  RDZNW 
  TPL 
-$GENE 
+ GENE 
  APEI 
  CPF 
-$PEG 
+ PEG 
  ALXO 
  NEEPN 
  CDTTW 
  FTS 
-$MAT 
+ MAT 
  GLPG 
  FTI 
  ADP 
@@ -2472,7 +2472,7 @@ $MAT
  TAOP 
  BXP 
  XPON 
-$IRON 
+ IRON 
  CAMT 
  LCAA 
  R 
@@ -2480,16 +2480,16 @@ $IRON
  XAIR 
  GWH-WS 
  HUIZ 
-$PLOW 
+ PLOW 
  NMAI 
  KLXE 
-$LIVE 
+ LIVE 
  PCG-P-I 
  PK 
  PODC 
  PWP 
  NXTT 
-$LEU 
+ LEU 
  KC 
  QGEN 
  SLN 
@@ -2507,7 +2507,7 @@ $LEU
  LEGH 
  CEPU 
  WLYB 
-$MASS 
+ MASS 
  MIO 
  CRWL 
  CROX 
@@ -2525,7 +2525,7 @@ $MASS
  MSTR 
  BSBR 
  VMEO 
-$PARA 
+ PARA 
  TSLX 
  CMS-P-B 
  ALCE 
@@ -2541,7 +2541,7 @@ $PARA
  TECK 
  RXO 
  XFOR 
-$ROAD 
+ ROAD 
  BWIN 
  CPIX 
  ADXN 
@@ -2550,7 +2550,7 @@ $ROAD
  TRIB 
  PSN 
  GTLB 
-$LOBO 
+ LOBO 
  CVV 
  PGR 
  YUMC 
@@ -2575,7 +2575,7 @@ $LOBO
  AGNCP 
  GLADZ 
  GMED 
-$VOLT 
+ VOLT 
  ABVE 
  CPNQ 
  VRRM 
@@ -2599,14 +2599,14 @@ $VOLT
  WLDSW 
  ENPH 
  DHCNL 
-$HE 
+ HE 
  NMM 
  GANX 
  QSR 
  EURKU 
  TETEW 
  WTMAR 
-$LOPE 
+ LOPE 
  BKTI 
  HMACW 
  CGNT 
@@ -2614,12 +2614,12 @@ $LOPE
  KNDI 
  MNDO 
  WTFCP 
-$BALL 
+ BALL 
  WEAV 
  MC 
  DGNU 
  FBP 
-$POLE 
+ POLE 
  CTOS 
  WHLR 
  SRG 
@@ -2628,13 +2628,13 @@ $POLE
  USGO 
  NRG 
  TJX 
-$LOW 
+ LOW 
  ALOR 
  TCBS 
  MYO 
  BVS 
  IVR 
-$INN 
+ INN 
  WGO 
  SBRA 
  ALNY 
@@ -2643,9 +2643,9 @@ $INN
  ATXG 
  OWL-WS 
  SDST 
-$RICK 
+ RICK 
  AEAEW 
-$AXON 
+ AXON 
  IDCC 
  AGFY 
  KR 
@@ -2664,7 +2664,7 @@ $AXON
  EFC-P-A 
  FLWS 
  PTEST-X 
-$EYE 
+ EYE 
  TOI 
  TFC 
  ENTA 
@@ -2673,11 +2673,11 @@ $EYE
  GOTU 
  GIWWW 
  TOVX 
-$BIRK 
+ BIRK 
  SHLS 
  AME 
  OZKAP 
-$MHO 
+ MHO 
  YHNAR 
  OVID 
  CEAD 
@@ -2687,7 +2687,7 @@ $MHO
  EAF 
  ATMCW 
  DDS 
-$CAR 
+ CAR 
  VNO-P-O 
  DUOT 
  RMNI 
@@ -2702,10 +2702,10 @@ $CAR
  BRFH 
  CBNK 
  CORZZ 
-$SIM 
+ SIM 
  FNWB 
  HSIC 
-$SHIM 
+ SHIM 
  BSM 
  FOXA 
  CREVW 
@@ -2725,18 +2725,18 @@ $SHIM
  VGASW 
  EQR 
  BEPH 
-$KORE 
+ KORE 
  BKHAR 
  GMM 
  XPOF 
  AGNCL 
  KN 
-$AIR 
+ AIR 
  PB 
-$VINE 
+ VINE 
  VECT 
  CYCCP 
-$BEAM 
+ BEAM 
  VEON 
  PTPI 
  AIMBU 
@@ -2750,7 +2750,7 @@ $BEAM
  NLY-P-G 
  BV 
  ADEA 
-$LIN 
+ LIN 
  ATXI 
  BETR 
  PRLHU 
@@ -2774,7 +2774,7 @@ $LIN
  BHR-P-D 
  PNFP 
  SPTKW 
-$ARES 
+ ARES 
  TRAW 
  LIXTW 
  MSSM 
@@ -2800,26 +2800,26 @@ $ARES
  JBI 
  CHCO 
  KWESW 
-$LAKE 
+ LAKE 
  TAL 
  RGC 
  GECCH 
  TAK 
-$MAIN 
+ MAIN 
  SSTI 
  MURA 
  CLB 
  CLYM 
  KNF 
-$BAH 
-$ENS 
+ BAH 
+ ENS 
  HSPO 
-$YOU 
+ YOU 
  ITP 
  ZSPC 
-$TANH 
-$LINE 
-$COIN 
+ TANH 
+ LINE 
+ COIN 
  AES 
  CTS 
  FSTR 
@@ -2827,7 +2827,7 @@ $COIN
  GMS 
  GLST 
  MKFG 
-$IBEX 
+ IBEX 
  ARLP 
  UPB 
  ICR-P-A 
@@ -2850,7 +2850,7 @@ $IBEX
  FINW 
  MTB 
  SAFT 
-$MAX 
+ MAX 
  MULN 
  BYSI 
  PRIF-P-F 
@@ -2866,7 +2866,7 @@ $MAX
  KOF 
  SA 
  DECA 
-$PITA 
+ PITA 
  XNET 
  ONCO 
  BDC 
@@ -2874,13 +2874,13 @@ $PITA
  HWKN 
  ICUI 
  BAYA 
-$ASH 
+ ASH 
  WYHG 
  RLMD 
  EVAX 
  WRB-P-E 
  VIGL 
-$BUD 
+ BUD 
  EBMT 
  XIN 
  TG 
@@ -2891,7 +2891,7 @@ $BUD
  CCRD 
  TBSAW 
  NWSA 
-$NEWT 
+ NEWT 
  BUSE 
  DFIN 
  CVCO 
@@ -2902,7 +2902,7 @@ $NEWT
  VTR 
  LPL 
  HOV 
-$MAPS 
+ MAPS 
  CMI 
  BAC-P-M 
  BDX 
@@ -2911,7 +2911,7 @@ $MAPS
  OSW 
  WTFCM 
  CFG 
-$KIDS 
+ KIDS 
  GENK 
  METCZ 
  LRE 
@@ -2920,7 +2920,7 @@ $KIDS
  DLNG 
  CDNA 
  ASTL 
-$NINE 
+ NINE 
  PFG 
  FDP 
  IMMX 
@@ -2944,11 +2944,11 @@ $NINE
  XYL 
  EXTO 
  IGIC 
-$COST 
+ COST 
  JRVR 
  PSA-P-H 
  DLR-P-K 
-$ELAN 
+ ELAN 
  S 
  MDRR 
  HODL 
@@ -2958,16 +2958,16 @@ $ELAN
  JUGG 
  PRK 
  FGN 
-$NEP 
+ NEP 
  LVO 
  IVA 
  BRAC 
  SYK 
-$TOUR 
+ TOUR 
  ALGT 
-$LOMA 
+ LOMA 
  MGM 
-$SHOO 
+ SHOO 
  TRDA 
  SGD 
  MOGO 
@@ -2987,7 +2987,7 @@ $SHOO
  IMPPP 
  LVACW 
  DSGX 
-$PINE 
+ PINE 
  SNX 
  AACT-WS 
  CLRO 
@@ -2995,7 +2995,7 @@ $PINE
  TREX 
  GFF 
  BBY 
-$FEAT 
+ FEAT 
  HGLB 
  GDEV 
  IHG 
@@ -3006,9 +3006,9 @@ $FEAT
  TS 
  AHT 
  GGAL 
-$SAGE 
+ SAGE 
  GLLIR 
-$MARA 
+ MARA 
  VMGA 
  LANV-WS 
  DRRX 
@@ -3022,17 +3022,17 @@ $MARA
  JTAI 
  NVAX 
  DGLY 
-$KIRK 
+ KIRK 
  AHH-P-A 
  DTW 
  YGLD 
  CGTX 
  WFC-P-D 
  FSCO 
-$SUNS 
+ SUNS 
  TRTN-P-A 
  ALOT 
-$OUT 
+ OUT 
  BHE 
  TAVI 
  TLRY 
@@ -3042,7 +3042,7 @@ $OUT
  TTD 
  GMRE-P-A 
  CXAIW 
-$CUE 
+ CUE 
  INDI 
  VIPS 
  IXAQF 
@@ -3072,16 +3072,16 @@ $CUE
  UK 
  QH 
  TBMC 
-$FLUX 
+ FLUX 
  YOTAW 
  ENLV 
  SOTK 
  ECCC 
  LSB 
  SGML 
-$SEE 
+ SEE 
  HBT 
-$MULL 
+ MULL 
  OKUR 
  ITT 
  ILPT 
@@ -3095,7 +3095,7 @@ $MULL
  CVRX 
  TLTI 
  DLR 
-$ST 
+ ST 
  EVLVW 
  MCAG 
  GWH 
@@ -3104,12 +3104,12 @@ $ST
  CREV 
  KMX 
  EBR-B 
-$NU 
+ NU 
  TRAK 
  RNXT 
  AVO 
  TPB 
-$SABS 
+ SABS 
  VTLE 
  ANVS 
  XLYO 
@@ -3132,7 +3132,7 @@ $SABS
  MMA 
  BWEN 
  ALLT 
-$TOWN 
+ TOWN 
  NTEST-H 
  LVTX 
  POR 
@@ -3145,7 +3145,7 @@ $TOWN
  ZVSA 
  GBX 
  ETN 
-$SAN 
+ SAN 
  MPLN 
  VMCAW 
  PRIF-P-L 
@@ -3158,7 +3158,7 @@ $SAN
  ASAN 
  MGOL 
  PMT-P-B 
-$SEI 
+ SEI 
  CPLP 
  BWA-W 
  ECCV 
@@ -3176,7 +3176,7 @@ $SEI
  PCMM 
  OTLY 
  JXG 
-$TRIN 
+ TRIN 
  HL-P-B 
  NNE 
  MTUL 
@@ -3194,7 +3194,7 @@ $TRIN
  NRXS 
  WENA 
  U 
-$BASE 
+ BASE 
  CNEY 
  NDAC 
  AAM-WS 
@@ -3206,7 +3206,7 @@ $BASE
  EDSA 
  OTRKP 
  IMAB 
-$ODD 
+ ODD 
  RWAYL 
  DBRG-P-J 
  RMCF 
@@ -3215,7 +3215,7 @@ $ODD
  WTMA 
  MYND 
  ONVO 
-$SHOP 
+ SHOP 
  LYEL 
  VERU 
  MBC-W 
@@ -3231,7 +3231,7 @@ $SHOP
  TMC 
  EMKR 
  KNF-W 
-$SOL 
+ SOL 
  CUBT 
  EDAP 
  LFBD 
@@ -3239,7 +3239,7 @@ $SOL
  BHLB 
  RWT-P-A 
  STC 
-$FRO 
+ FRO 
  FORR 
  VST 
  SENEB 
@@ -3269,7 +3269,7 @@ $FRO
  SYM 
  MGY 
  KTTAW 
-$HOPE 
+ HOPE 
  DJT 
  MDB 
  NFYS-U 
@@ -3291,7 +3291,7 @@ $HOPE
  GLYC 
  LITTU 
  EPD 
-$MAS 
+ MAS 
  BH 
  PANW 
  QMMM 
@@ -3308,7 +3308,7 @@ $MAS
  FWP 
  TFC-P-I 
  FDBC 
-$WAY 
+ WAY 
  UTL 
  NYMT 
  AWH 
@@ -3316,7 +3316,7 @@ $WAY
  CFFN 
  STIM 
  CPHI 
-$LUV 
+ LUV 
  TFFP 
  CENTA 
  ATIF 
@@ -3340,7 +3340,7 @@ $LUV
  AEAEU 
  CLCO 
  O 
-$TREE 
+ TREE 
  CIVI 
  ESQ 
  GCTK 
@@ -3354,10 +3354,10 @@ $TREE
  ASYS 
  MRTN 
  SHO 
-$AI 
+ AI 
  DOGZ 
-$TRUG 
-$LASE 
+ TRUG 
+ LASE 
  WDAY 
  SCPH 
  CDLR 
@@ -3365,7 +3365,7 @@ $LASE
  MSBI 
  CCB 
  EE 
-$GLOB 
+ GLOB 
  APXIU 
  HLF 
  SBFMW 
@@ -3397,7 +3397,7 @@ $GLOB
  AGTC 
  CTBI 
  HUBB 
-$GHI 
+ GHI 
  VTS-W 
  MSLC 
  FSNB 
@@ -3412,7 +3412,7 @@ $GHI
  HTLFP 
  QOMO 
  GCT 
-$SANG 
+ SANG 
  PMEC 
  WTBA 
  IVR-P-C 
@@ -3440,8 +3440,8 @@ $SANG
  RLJ 
  PSA-P-Q 
  FEAM 
-$LAC 
-$AMBO 
+ LAC 
+ AMBO 
  PMT-P-C 
  TTSH 
  RITM-P-C 
@@ -3451,7 +3451,7 @@ $AMBO
  PLMIU 
  PM 
  DIST 
-$MOVE 
+ MOVE 
  INVZ 
  ONFO 
  UHT 
@@ -3463,29 +3463,29 @@ $MOVE
  GIACU 
  ZAPPW 
  KMPR 
-$ROCK 
+ ROCK 
  SSSSL 
  FERG 
-$HI 
+ HI 
  VRA 
  NTEST-A 
  ASC 
  UMBF 
  STEC 
-$EXPO 
+ EXPO 
  MFIC 
  KIM 
  INSM 
  ENFY 
  BOAC-U 
  MWG 
-$ROMA 
+ ROMA 
  PIII 
  IFN-R 
  MEG 
  BEAGU 
  BBAR 
-$WEN 
+ WEN 
  NKSH 
  NOACU 
  CMPS 
@@ -3497,11 +3497,11 @@ $WEN
  MDBH 
  HEI 
  ADC-P-A 
-$BARK 
+ BARK 
  TFSL 
  MGI 
  DCOM 
-$MORN 
+ MORN 
  MPACW 
  ANIK 
  RRR 
@@ -3519,7 +3519,7 @@ $MORN
  NYCB-P-U 
  NVGS 
  AIMDW 
-$FUN 
+ FUN 
  EAI 
  SAJ 
  LYG 
@@ -3534,20 +3534,20 @@ $FUN
  SPKL 
  VRNT 
  CON-W 
-$TIL 
+ TIL 
  HVT-A 
  ARGU 
-$AVAL 
-$ALT 
-$BY 
+ AVAL 
+ ALT 
+ BY 
  CMTG 
  GDSTU 
  EOSE 
  EZFL 
  SKYX 
-$SOLO 
+ SOLO 
  KELYB 
-$EH 
+ EH 
  RDACR 
  RMCO 
  ADT 
@@ -3573,13 +3573,13 @@ $EH
  MPC 
  OPRX 
  CRH 
-$SAP 
+ SAP 
  DSGR 
  GNTX 
  BAERW 
  TCBP 
  TRMB 
-$DELL 
+ DELL 
  CHEB 
  V 
  TTMI 
@@ -3614,16 +3614,16 @@ $DELL
  WNEB 
  MEGI 
  BKD 
-$BOLT 
+ BOLT 
  SWBI 
  GRABW 
  WMT 
  TPG 
  ECOR 
  USB-P-R 
-$BEN 
+ BEN 
  BKYI 
-$HAS 
+ HAS 
  DYNXU 
  PERF-WS 
  RGLS 
@@ -3656,9 +3656,9 @@ $HAS
  SCE-P-K 
  PTA 
  META 
-$ALL 
+ ALL 
  JAMF 
-$MAMA 
+ MAMA 
  STRW 
  OSCR 
  LIDRW 
@@ -3667,19 +3667,19 @@ $MAMA
  CWCO 
  GLLIW 
  VCICU 
-$GOOD 
+ GOOD 
  QOMOU 
  B 
  IBN 
  NTWK 
-$FAST 
+ FAST 
  VCXAW 
  CMPR 
  RNG 
  ACHR-WS 
  UPSD 
  PXLW 
-$KEX 
+ KEX 
  CLBT 
  CFR-P-B 
  GRYP 
@@ -3700,17 +3700,17 @@ $KEX
  IRIX 
  KBNTW 
  ENVB 
-$SAM 
+ SAM 
  NBIX 
  EU 
  ABL 
  CXM 
  BERZ 
-$COOP 
+ COOP 
  NGL 
  GD 
  INLF 
-$DIBS 
+ DIBS 
  GECCZ 
  ITOS 
  ADUS 
@@ -3741,10 +3741,10 @@ $DIBS
  CJET 
  IMCC 
  GRWG 
-$CODA 
+ CODA 
  INTS 
  INFA 
-$ANY 
+ ANY 
  KRKR 
  BML-P-G 
  IMCR 
@@ -3761,7 +3761,7 @@ $ANY
  NOA 
  LNSR 
  CCIXW 
-$LAD 
+ LAD 
  ATSG 
  TELO 
  BEDU 
@@ -3774,7 +3774,7 @@ $LAD
  VIAV 
  HBCP 
  LPRO 
-$MITT 
+ MITT 
  SHEN 
  ATLC 
  IDR 
@@ -3784,7 +3784,7 @@ $MITT
  TGL 
  APYX 
  SCHW-P-J 
-$GAP 
+ GAP 
  AXTA 
  BETRW 
  AMCX 
@@ -3818,10 +3818,10 @@ $GAP
  JCTC 
  MDCXW 
  MCOM 
-$CHAR 
-$AIT 
+ CHAR 
+ AIT 
  PFIE 
-$RUN 
+ RUN 
  IIPR-P-A 
  AMR 
  LGL-WS 
@@ -3831,7 +3831,7 @@ $RUN
  MLR 
  TSYY 
  ATLCP 
-$SAG 
+ SAG 
  MGNI 
  HTCR 
  CARA 
@@ -3849,7 +3849,7 @@ $SAG
  NNOX 
  GDS 
  TXG 
-$ICE 
+ ICE 
  MGRX 
  CASI 
  JUNE 
@@ -3886,9 +3886,9 @@ $ICE
  SPHL 
  DHIL 
  EVR 
-$LAW 
-$LEG 
-$TASK 
+ LAW 
+ LEG 
+ TASK 
  BRKR 
  BW-P-A 
  WERN 
@@ -3914,11 +3914,11 @@ $TASK
  AGMH 
  MPLX 
  AFGC 
-$PAY 
+ PAY 
  BRC 
  EPOW 
  GVCIU 
-$SAR 
+ SAR 
  ASPCR 
  GBRG 
  VITL 
@@ -3931,7 +3931,7 @@ $SAR
  ZCARW 
  SYF-P-A 
  CSPI 
-$WEYS 
+ WEYS 
  FTIIW 
  BFRI 
  CMSC 
@@ -3969,7 +3969,7 @@ $WEYS
  SMC 
  AMV 
  NIOBW 
-$MUSE 
+ MUSE 
  SCHW-P-D 
  PTLE 
  SLGL 
@@ -3998,12 +3998,12 @@ $MUSE
  WAFD 
  LIVN 
  ASTH 
-$COOT 
+ COOT 
  DAC 
  ALTR 
  GMGI 
  KMT 
-$BRO 
+ BRO 
  SOUN 
  SMCL 
  BDL 
@@ -4081,7 +4081,7 @@ $BRO
  WORX 
  AMTM 
  BQ 
-$ERIC 
+ ERIC 
  LPG 
  KTCC 
  EPR-P-G 
@@ -4107,7 +4107,7 @@ $ERIC
  AIFU 
  HYMCW 
  CODI-P-A 
-$BACK 
+ BACK 
  LTH 
  CXW 
  BBSI 
@@ -4115,19 +4115,19 @@ $BACK
  BALY 
  RENB 
  PRTG 
-$NEON 
+ NEON 
  VFF 
  FHN-P-B 
  RPD 
  FCCO 
  CCM 
  SPSC 
-$FIZZ 
+ FIZZ 
  NWL 
  BFIN 
  ESLAW 
  HUDA 
-$GEOS 
+ GEOS 
  BITF 
  CABO 
  BGLC 
@@ -4149,34 +4149,34 @@ $GEOS
  XBIT 
  ATNM 
  AHT-P-F 
-$GROW 
+ GROW 
  BYND 
  HWBK 
  KRBP 
  PRVS 
-$GILD 
-$MOD 
+ GILD 
+ MOD 
  BLDEW 
  PLMJ 
-$WAVE 
+ WAVE 
  MRNOW 
  ROKU 
  IBAC 
-$HUT 
+ HUT 
  CVGW 
  UNMA 
  AMN 
  ESEA 
  XLO 
  KROS 
-$DICE 
+ DICE 
  SVII 
  KAPA 
-$SIRI 
+ SIRI 
  GNT-P-A 
  EMBK 
  PARAA 
-$SUI 
+ SUI 
  PAMT 
  REVBW 
  FITBO 
@@ -4189,7 +4189,7 @@ $SUI
  POWL 
  LATG 
  INXBV 
-$ESS 
+ ESS 
  SFIX 
  IOT 
  KFRC 
@@ -4203,7 +4203,7 @@ $ESS
  ARBK 
  ALL-P-B 
  STFS 
-$PAR 
+ PAR 
  ATHA 
  ET 
  PTEST-A 
@@ -4227,7 +4227,7 @@ $PAR
  VTGN 
  SQNS 
  IBTA 
-$REE 
+ REE 
  CPS 
  PRTA 
  CEVA 
@@ -4237,7 +4237,7 @@ $REE
  PLMJW 
  KBH 
  CHSCO 
-$PROF 
+ PROF 
  RVSB 
  SONO 
  FBK 
@@ -4246,24 +4246,24 @@ $PROF
  BATL 
  ZXYZ-A 
  OCFT 
-$ATOM 
-$BROS 
+ ATOM 
+ BROS 
  NVVE 
  PAAS 
  PCTTU 
  ORGO 
-$BA 
+ BA 
  BBGI 
  CMP 
-$PHAT 
+ PHAT 
  OABI 
-$AIM 
+ AIM 
  TSAT 
  NAVI 
  CEQP-P 
  MITQ 
  HYMCL 
-$MUX 
+ MUX 
  LFCR 
  HTOOW 
  GLACR 
@@ -4271,13 +4271,13 @@ $MUX
  TFX 
  HURC 
  OFLX 
-$ASPS 
+ ASPS 
  BKNG 
  LND 
  UAMY 
  CR 
  CING 
-$LOCO 
+ LOCO 
  AHL-P-D 
  HWM 
  PMN 
@@ -4292,14 +4292,14 @@ $LOCO
  LSTR 
  AUID 
  ECCX 
-$HOND 
+ HOND 
  CASS 
  AUBN 
  BWBBP 
  CUK 
  FFNW 
  LRN 
-$STEM 
+ STEM 
  ELBM 
  BIIB 
  XYLO 
@@ -4333,7 +4333,7 @@ $STEM
  CYBR 
  UPLD 
  DISTW 
-$STAG 
+ STAG 
  DUKB 
  ABSI 
  CNI 
@@ -4349,25 +4349,25 @@ $STAG
  BMRN 
  IDYA 
  CCEC 
-$LOB 
+ LOB 
  WSBC 
  DTIL 
  COEPW 
  ESNT 
  DYN 
  APWC 
-$CION 
+ CION 
  KKRS 
  STZ 
-$WRAP 
+ WRAP 
  FFBC 
  LX 
  FREQ 
  SOPA 
  UMH-P-D 
-$GAME 
+ GAME 
  BLKB 
-$TACT 
+ TACT 
  AHH 
  OCTO 
  PAC 
@@ -4375,7 +4375,7 @@ $TACT
  ESHA 
  RR 
  IIVI 
-$SLAB 
+ SLAB 
  USLM 
  ONIT 
  ATEX 
@@ -4384,27 +4384,27 @@ $SLAB
  SEIC 
  JCI 
  SCMAW 
-$BUR 
+ BUR 
  SXI 
  SOJC 
-$JOE 
+ JOE 
  NHICU 
  OSK 
-$KEYS 
+ KEYS 
  MPU 
  DHCNI 
  GDV-P-K 
  MAMO 
  VRSN 
-$HUMA 
+ HUMA 
  MSAIW 
-$OIS 
+ OIS 
  SLNHP 
  URBN 
  DRH-P-A 
  NPFD 
  WLDN 
-$PATH 
+ PATH 
  BHFAL 
  ZVIA 
  PEGA 
@@ -4429,7 +4429,7 @@ $PATH
  CERS 
  UHAL 
  GNPX 
-$TARA 
+ TARA 
  CATY 
  TECX 
  TEAF 
@@ -4453,14 +4453,14 @@ $TARA
  GRAF 
  FCRX 
  REVG 
-$TOON 
+ TOON 
  BVFL 
  FMBH 
  STSS 
-$SOS 
+ SOS 
  NATL-W 
  MCS 
-$HOG 
+ HOG 
  SEAL-P-B 
  BLRX 
  MS-P-P 
@@ -4476,24 +4476,24 @@ $HOG
  BANFP 
  ELP 
  ARBKL 
-$RIME 
+ RIME 
  GOODO 
  ESP 
  XP 
  FINV 
  TSBX 
  HBB 
-$AIN 
+ AIN 
  EXFY 
  WS 
  MBIO 
  TCTM 
  PLTK 
  NCTY 
-$FLIC 
+ FLIC 
  HBANP 
  RFAI 
-$RAMP 
+ RAMP 
  PSEC 
  CNH 
  DLNG-P-B 
@@ -4501,11 +4501,11 @@ $RAMP
  TLYS 
  NXST 
  OCSL 
-$MATH 
+ MATH 
  PWM 
  CARM 
  HHS 
-$MAN 
+ MAN 
  LCII 
  MRSN 
  JNPR 
@@ -4519,7 +4519,7 @@ $MAN
  UDR 
  CHEK 
  NXPL 
-$NEXT 
+ NEXT 
  FTK 
  CVAC 
  SDOT 
@@ -4536,14 +4536,14 @@ $NEXT
  MSGM 
  TCBIO 
  WNS 
-$OB 
+ OB 
  DNA 
  AKRO 
  GBDC 
  CFFI 
  ENSG 
-$GLAD 
-$ARM 
+ GLAD 
+ ARM 
  ABEO 
  SSNC 
  IBCP 
@@ -4567,7 +4567,7 @@ $ARM
  VGAS 
  TXO 
  CETX 
-$PRO 
+ PRO 
  CLFD 
  UVE 
  CHNR 
@@ -4575,7 +4575,7 @@ $PRO
  NVO 
  BCAN 
  PRGO 
-$CARS 
+ CARS 
  FATBB 
  OCFCP 
  NTRBW 
@@ -4595,7 +4595,7 @@ $CARS
  BBUC 
  VCEL 
  NTEST-M 
-$SAIC 
+ SAIC 
  ASST 
  FTAIN 
  EVTC 
@@ -4611,14 +4611,14 @@ $SAIC
  VLRS 
  HMCOU 
  MGX 
-$PUMP 
-$TALK 
+ PUMP 
+ TALK 
  BCML 
  FSK 
  SEDA-U 
  SREA 
  DUETU 
-$SENS 
+ SENS 
  AQU 
  FFWM 
  HTZWW 
@@ -4638,7 +4638,7 @@ $SENS
  FOXF 
  TXT 
  TTGT 
-$MIR 
+ MIR 
  KTN 
  NHPAP 
  PIRS 
@@ -4663,7 +4663,7 @@ $MIR
  JBDI 
  ACGLO 
  BJ 
-$SUN 
+ SUN 
  GRDN 
  IR 
  DM 
@@ -4672,17 +4672,17 @@ $SUN
  NYAX 
  MSPR 
  HMACR 
-$QUAD 
+ QUAD 
  VRPX 
  CHKP 
  MIGI 
-$BOOT 
+ BOOT 
  FLXS 
  ASB-P-F 
  SASR 
  EVRI 
  GRNA 
-$KINS 
+ KINS 
  MOGU 
  NUVB 
  CE 
@@ -4696,7 +4696,7 @@ $KINS
  IVVD 
  RCFA-U 
  BRID 
-$HONE 
+ HONE 
  HTLF 
  GECC 
  INVN 
@@ -4711,9 +4711,9 @@ $HONE
  PBF 
  PGY 
  OXBRW 
-$PARR 
+ PARR 
  IPM 
-$AFAR 
+ AFAR 
  BKH 
  HIW 
  WFG 
@@ -4723,7 +4723,7 @@ $AFAR
  RDCM 
  VTEX 
  NMHIW 
-$ZYME 
+ ZYME 
  NUVO 
  CNFRZ 
  LW 
@@ -4733,13 +4733,13 @@ $ZYME
  WRLD 
  ARBE 
  RSKD 
-$SAY 
-$POST 
+ SAY 
+ POST 
  BW 
  CCTG 
  CWBC 
  JVSA 
-$LULU 
+ LULU 
  WINVW 
  CPBI 
  BAC-P-N 
@@ -4793,7 +4793,7 @@ $LULU
  HYZN 
  CORZW 
  MCAGR 
-$SUP 
+ SUP 
  LPAA 
  MNTK 
  NFLX 
@@ -4827,7 +4827,7 @@ $SUP
  TLGYU 
  YOTAR 
  BMRC 
-$GLUE 
+ GLUE 
  PFLT 
  KPRX 
  CFLT 
@@ -4836,7 +4836,7 @@ $GLUE
  AOMN 
  DEA 
  FSLY 
-$ORC 
+ ORC 
  GOSS 
  ARBB 
  LDTC 
@@ -4860,19 +4860,19 @@ $ORC
  DNAD 
  PDSB 
  CWAN 
-$GIG 
+ GIG 
  USGOW 
-$IFS 
+ IFS 
  IGR-R 
  HTOO 
  NCRA 
-$BRAG 
+ BRAG 
  AMPY 
  ALX 
  LRMR 
  RITM-P-A 
  NDEC 
-$CEP 
+ CEP 
  FNKO 
  DTSS 
  GIC 
@@ -4886,13 +4886,13 @@ $CEP
  CBO 
  KVYO 
  DTST 
-$JACK 
+ JACK 
  MBCN 
  ATRA 
  SPNT-P-B 
  INDP 
  ESLT 
-$PLUG 
+ PLUG 
  EDRY 
  TME 
  NCPL 
@@ -4911,7 +4911,7 @@ $PLUG
  BRLIU 
  CNCKW 
  VICR 
-$DIN 
+ DIN 
  PPC 
  CEG 
  CHRD 
@@ -4931,20 +4931,20 @@ $DIN
  LUNR 
  VCTR 
  ACON 
-$CURB 
+ CURB 
  SR-P-A 
  MRDB-WS 
  C-P-N 
  GLAC 
  EFX 
  ATLCL 
-$LOT 
+ LOT 
  CGTL 
  CDROW 
  CORZ 
  PTEN 
-$AA 
-$PACK 
+ AA 
+ PACK 
  PSA-P-L 
  VTAK 
  QSG 
@@ -4952,13 +4952,13 @@ $PACK
  HOVRW 
  AFG 
  QS 
-$ARCO 
+ ARCO 
  MUSA 
  IVCPU 
  SNCR 
  PRFX 
  CADL 
-$NAT 
+ NAT 
  EML 
  OBE 
  NYC 
@@ -4982,9 +4982,9 @@ $NAT
  JXN 
  PCG 
  ATO 
-$GILT 
+ GILT 
  PSA-P-P 
-$GAN 
+ GAN 
  KREF-P-A 
  NTEST-N 
  ECO 
@@ -5006,7 +5006,7 @@ $GAN
  SUGP 
  MCAAW 
  AZ 
-$RARE 
+ RARE 
  INVZW 
  NEGG 
  SDIG 
@@ -5022,7 +5022,7 @@ $RARE
  ICG 
  PAVS 
  HEXO 
-$GAMB 
+ GAMB 
  WAFU 
  JHX 
  RSLS 
@@ -5057,10 +5057,10 @@ $GAMB
  BCH 
  BCS 
  CARU 
-$ES 
+ ES 
  MRBK 
  SPG 
-$YETI 
+ YETI 
  DYAI 
  ASPN 
  RILYN 
@@ -5073,10 +5073,10 @@ $YETI
  KALV 
  KDLYW 
  UUU 
-$CARE 
+ CARE 
  LBPH 
  LFMDP 
-$LOVE 
+ LOVE 
  NTRSO 
  OTMOW 
  PALI 
@@ -5084,7 +5084,7 @@ $LOVE
  TTNP 
  FOA 
  PBYI 
-$VIA 
+ VIA 
  NTR 
  MMYT 
  WTM 
@@ -5092,7 +5092,7 @@ $VIA
  MNST 
  NABL 
  SHCAU 
-$WOOF 
+ WOOF 
  WEX 
  CVGI 
  CNO-P-A 
@@ -5141,26 +5141,26 @@ $WOOF
  DEO 
  MIDD 
  PEB-P-F 
-$LARK 
+ LARK 
  GRRR 
  HPP-P-C 
  AYRO 
  EXEEZ 
-$AB 
+ AB 
  CAH 
  GBCI 
  IGTAU 
  BXSL 
  TITN 
  PL 
-$GAU 
+ GAU 
  FXNC 
  TCBI 
  HMN 
  ATKR 
  COMM 
  DOMO 
-$GRIN 
+ GRIN 
  ERNA 
  ABEV 
  GTN-A 
@@ -5171,13 +5171,13 @@ $GRIN
  ENJ 
  LH 
  OSG 
-$SEED 
+ SEED 
  BRIA 
  ALCYU 
  CNSP 
  ATCOL 
  FC 
-$EAT 
+ EAT 
  GJS 
  MOBBW 
  EMX 
@@ -5201,7 +5201,7 @@ $EAT
  TWCBU 
  QSI 
  FBYDW 
-$CAKE 
+ CAKE 
  XPRO 
  CMT 
  COHR 
@@ -5227,10 +5227,10 @@ $CAKE
  VSTEW 
  AMBP-WS 
  RELL 
-$CASK 
+ CASK 
  HPLT 
-$PET 
-$KAI 
+ PET 
+ KAI 
  COCP 
  CGEN 
  AMBC 
@@ -5257,7 +5257,7 @@ $KAI
  DOOO 
  AMRC 
  BVN 
-$AX 
+ AX 
  SWKHL 
  KGC 
  KZIA 
@@ -5265,8 +5265,8 @@ $AX
  LFDR 
  PRDS 
  ESLA 
-$MAA 
-$SOAR 
+ MAA 
+ SOAR 
  LEGT 
  CELU 
  TANNZ 
@@ -5274,7 +5274,7 @@ $SOAR
  NCEW 
  RCI 
  RDY 
-$SERA 
+ SERA 
  NOACW 
  CBUS 
  TVTX 
@@ -5302,7 +5302,7 @@ $SERA
  CLBR-U 
  KAR 
  RUMBW 
-$TELA 
+ TELA 
  JPM-P-L 
  DFS 
  ULCC 
@@ -5330,25 +5330,25 @@ $TELA
  USAU 
  BKSY 
  OCCIO 
-$MU 
+ MU 
  MKTW 
  BIGZ 
  STTK 
-$LOAN 
+ LOAN 
  BRLIR 
  ACEL 
  GOEVW 
  NISN 
  OACCW 
-$PAX 
+ PAX 
  TRS 
  ACRS 
-$PED 
+ PED 
  ECBK 
  HLMN 
  BUJAW 
  VCYT 
-$THO 
+ THO 
  HAIAW 
  K 
  ENVX 
@@ -5388,7 +5388,7 @@ $THO
  NFE 
  SSY 
  VIK 
-$PI 
+ PI 
  APLS 
  TDACU 
  ZG 
@@ -5398,14 +5398,14 @@ $PI
  ROSS-WS 
  CRK 
  TWCBW 
-$WING 
+ WING 
  GURE 
  BKE 
  MRNS 
  QNCX 
  TNGX 
  BTBT 
-$MOB 
+ MOB 
  FRSH 
  ZURA 
  CLSKW 
@@ -5414,7 +5414,7 @@ $MOB
  AMWL 
  ARKR 
  CDW 
-$SNY 
+ SNY 
  EQS 
  ARMK 
  EURKR 
@@ -5423,11 +5423,11 @@ $SNY
  NKTR 
  BIOSU 
  ELV 
-$PINS 
+ PINS 
  VCICW 
-$TEN 
+ TEN 
  NXG 
-$AURA 
+ AURA 
  APGE 
  ATH-P-D 
  RLX 
@@ -5446,22 +5446,22 @@ $AURA
  PLBC 
  CBX 
  TSM 
-$UPS 
+ UPS 
  NOVV 
  RWT 
-$HIVE 
+ HIVE 
  AAM 
  ALVR 
  QTTB 
  DMX 
  STGW 
  MNY 
-$FAT 
+ FAT 
  ARHS 
  PODD 
  NSA 
  FSM 
-$NICE 
+ NICE 
  CHMI-P-A 
  FUFUW 
  IOR 
@@ -5500,7 +5500,7 @@ $NICE
  MTEKW 
  LPBB 
  CPZ 
-$DUET 
+ DUET 
  TEN-P-F 
  BTBD 
  WSFS 
@@ -5521,11 +5521,11 @@ $DUET
  ALLE 
  EDBL 
  COUR 
-$COOK 
+ COOK 
  MRNO 
  PSA-P-R 
  VINC 
-$GYRO 
+ GYRO 
  HSPTU 
  BRKH 
  FRMEP 
@@ -5536,10 +5536,10 @@ $GYRO
  VCIC 
  SGBXV 
  CLNN 
-$VALE 
+ VALE 
  XOMAP 
  ICCT 
-$LEE 
+ LEE 
  HTFC 
  KLTO 
  SU 
@@ -5552,7 +5552,7 @@ $LEE
  JOUT 
  ENOV 
  ALG 
-$STEW 
+ STEW 
  EVRG 
  NXT 
  MD 
@@ -5574,9 +5574,9 @@ $STEW
  OLED 
  DRH 
  SHPH 
-$VET 
+ VET 
  FHLTW 
-$DERM 
+ DERM 
  FUBO 
  PETZ 
  UPXI 
@@ -5617,7 +5617,7 @@ $DERM
  OAKUR 
  ONCY 
  POLA 
-$BURL 
+ BURL 
  PRVA 
  CCO 
  XBPEW 
@@ -5640,7 +5640,7 @@ $BURL
  SCU 
  INKA 
  GLOP-P-C 
-$EARN 
+ EARN 
  RDWR 
  FBLA 
  LNZAW 
@@ -5652,7 +5652,7 @@ $EARN
  TRTN-P-E 
  RFIL 
  BCC 
-$BANC 
+ BANC 
  BRFS 
  ROL 
  RDW 
@@ -5667,18 +5667,18 @@ $BANC
  AMX 
  WB 
  ESTC 
-$HELE 
+ HELE 
  TW 
  RHE-P-A 
  TVE 
-$POET 
+ POET 
  ALTM 
  RFACW 
  DRMA 
  SNES 
  INGN 
  CLWT 
-$MYNA 
+ MYNA 
  BNGO 
  ENZ 
  AMBI 
@@ -5716,7 +5716,7 @@ $MYNA
  COF-P-L 
  SDRL 
  GPATU 
-$LEA 
+ LEA 
  FHI 
  RDFN 
  AENT 
@@ -5742,7 +5742,7 @@ $LEA
  SPNS 
  DG 
  PHM 
-$CALM 
+ CALM 
  EDBLW 
  AOUT 
  CCI 
@@ -5758,17 +5758,17 @@ $CALM
  UDMY 
  MDWD 
  PSTL 
-$TOPS 
-$ONTO 
+ TOPS 
+ ONTO 
  LDRH 
  SVRE 
  EQV-WS 
  NOVVU 
  MEGL 
  SQFTW 
-$UG 
+ UG 
  BTM 
-$TARS 
+ TARS 
  RPRX 
  DLCAU 
  VGFC 
@@ -5794,7 +5794,7 @@ $TARS
  PRIF-P-I 
  HGTY-WS 
  ABOS 
-$PRE 
+ PRE 
  NMTC 
  PSTV 
  DLY 
@@ -5805,7 +5805,7 @@ $PRE
  SDHC 
  NXGL 
  BWFG 
-$GUTS 
+ GUTS 
  MEKA 
  DCGO 
  MFAO 
@@ -5819,14 +5819,14 @@ $GUTS
  EONR 
  NEO 
  ENGN 
-$RANI 
+ RANI 
  CRIS 
  XOS 
  PLBY 
  BWXT 
  PDEX 
  RDIB 
-$AM 
+ AM 
  NSTS 
  QUIK 
  KWE 
@@ -5847,7 +5847,7 @@ $AM
  FSEA 
  NPAB 
  JXN-P-A 
-$CURR 
+ CURR 
  TETE 
  BHFAM 
  MSPRW 
@@ -5857,7 +5857,7 @@ $CURR
  HFFG 
  APCX 
  ONFOW 
-$ROC 
+ ROC 
  DBGIW 
  SNN 
  GCTSW 
@@ -5891,10 +5891,10 @@ $ROC
  BEPI 
  NEXN 
  IONQ-WS 
-$MAC 
+ MAC 
  GLP 
  BMO 
-$AMP 
+ AMP 
  SPHR 
  EBC 
  PACWP 
@@ -5904,12 +5904,12 @@ $AMP
  BLFY 
  OXLCZ 
  SKK 
-$TRUE 
+ TRUE 
  BRY 
  MTCR 
  LPTH 
  OII 
-$BAND 
+ BAND 
  JMIA 
  KPLTW 
  MARPS 
@@ -5919,11 +5919,11 @@ $BAND
  GV 
  ACCD 
  FLYU 
-$TATT 
+ TATT 
  PRSU 
  BYNO 
  LILA 
-$GITS 
+ GITS 
  TKO 
  SCMA 
  WTTR 
@@ -5960,14 +5960,14 @@ $GITS
  GLBZ 
  ANSCW 
  HLN 
-$FIVE 
+ FIVE 
  DHX 
  STVN 
  EMCGW 
  HDSN 
  SMR-WS 
  IMTXW 
-$NOVA 
+ NOVA 
  MTUS 
  BHFAO 
  FPI 
@@ -5981,7 +5981,7 @@ $NOVA
  ARWR 
  EXPD 
  BEEX 
-$NET 
+ NET 
  PNW 
  NCNO 
  FMC 
@@ -5995,7 +5995,7 @@ $NET
  MCFT 
  GSRMW 
  INBKZ 
-$WATT 
+ WATT 
  XTNT 
  BLDR 
  RELI 
@@ -6005,7 +6005,7 @@ $WATT
  LGMK 
  PCLO 
  PSNYW 
-$WOW 
+ WOW 
  JBLU 
  APPF 
  FENC 
@@ -6021,7 +6021,7 @@ $WOW
  EWTX 
  ZXZZT 
  GWW 
-$SUM 
+ SUM 
  VSEEW 
  ACHV 
  SBET 
@@ -6029,7 +6029,7 @@ $SUM
  IQV 
  BJDX 
  AJG 
-$WAT 
+ WAT 
  AMRS 
  PC 
  VMCAU 
@@ -6052,7 +6052,7 @@ $WAT
  T-P-A 
  BG 
  SPLP-P-A 
-$ZONE 
+ ZONE 
  CRUS 
  LTBR 
  MED 
@@ -6086,7 +6086,7 @@ $ZONE
  PLTD 
  ZENA 
  GREEL 
-$ALLY 
+ ALLY 
  GSBC 
  ROG 
  ROI 
@@ -6100,7 +6100,7 @@ $ALLY
  QMCO 
  WCN 
  ARBEW 
-$MO 
+ MO 
  ZJK 
  ARRY 
  ATNF 
@@ -6117,7 +6117,7 @@ $MO
  SJT 
  TDC 
  MATX 
-$OKE 
+ OKE 
  HIHO 
  NE-WS 
  PEB 
@@ -6132,7 +6132,7 @@ $OKE
  IZM 
  IMKTA 
  ADI 
-$FARM 
+ FARM 
  QQLV 
  DC-WS 
  HCVI 
@@ -6151,18 +6151,18 @@ $FARM
  STBX 
  ARR 
  GSL-P-B 
-$LAB 
+ LAB 
  MSFT 
-$BLUE 
+ BLUE 
  REGN 
  UCB 
  PLNT 
-$LION 
+ LION 
  WBD 
  UPST 
  CTAS 
  SMG 
-$ETH 
+ ETH 
  MVBF 
  QNRX 
  CWEN-A 
@@ -6193,9 +6193,9 @@ $ETH
  HMC 
  CLDX 
  SLM 
-$AIRT 
+ AIRT 
  CINGW 
-$HEPS 
+ HEPS 
  AG 
  XENE 
  COF-P-N 
@@ -6217,10 +6217,10 @@ $HEPS
  PEV 
  ATRO 
  PCG-P-B 
-$DOC 
+ DOC 
  F-P-C 
  FGIWW 
-$AIRS 
+ AIRS 
  GNL-P-A 
  MASI 
  CANF 
@@ -6255,10 +6255,10 @@ $AIRS
  VZ 
  BTAI 
  VSEE 
-$DAN 
+ DAN 
  TRINZ 
  MITT-P-C 
-$GYRE 
+ GYRE 
  PSA 
  PSTX 
  RAPP 
@@ -6306,21 +6306,21 @@ $GYRE
  AADI 
  PTMN 
  AVTE 
-$OM 
+ OM 
  DVQQ 
  ZVRA 
  KRMD 
  RGTI 
  BMAC 
-$KOS 
+ KOS 
  WRBY 
  TRC 
  HYAC-U 
  NKLA 
  UAA 
  LPBBU 
-$FOX 
-$TURN 
+ FOX 
+ TURN 
  BYD 
  CAPNU 
  PACXW 
@@ -6333,7 +6333,7 @@ $TURN
  AMIX 
  CBFV 
  LNN 
-$FLEX 
+ FLEX 
  BKDV 
  SXTPW 
  ARTNA 
@@ -6343,16 +6343,16 @@ $FLEX
  TRST 
  INSW 
  ANSS 
-$EVER 
-$TECH 
+ EVER 
+ TECH 
  FN 
  IMG 
  SNAXW 
-$DECK 
+ DECK 
  FSHPU 
  ASIX 
  TFC-P-O 
-$TRIP 
+ TRIP 
  MTZ 
  ROSS-U 
  FRGE 
@@ -6361,7 +6361,7 @@ $TRIP
  PDLB 
  SPH 
  INPX 
-$FARO 
+ FARO 
  ZVV 
  FSBC 
  PLL 
@@ -6386,7 +6386,7 @@ $FARO
  APMIU 
  MCD 
  IGT 
-$KEP 
+ KEP 
  NMFCZ 
  IPW 
  DOX 
@@ -6398,12 +6398,12 @@ $KEP
  PNST 
  DINO 
  GEHC 
-$MET 
+ MET 
  PPYA 
  UPBD 
  GJR 
  CMRX 
-$COCO 
+ COCO 
  WKEYV 
  MSB 
  BF-B 
@@ -6424,7 +6424,7 @@ $COCO
  SWX 
  COLB 
  BSLK 
-$ROOT 
+ ROOT 
  SHCO 
  NLY 
  AREC 
@@ -6444,16 +6444,16 @@ $ROOT
  CCV-U 
  SYTAW 
  RXRX 
-$PETS 
+ PETS 
  BBWI 
  REXR 
  IPG 
-$FOR 
+ FOR 
  AGCO 
  KSPI 
  AACT-U 
  PFC 
-$SNAP 
+ SNAP 
  ANGH 
  CVE-WS 
  FNA 
@@ -6473,13 +6473,13 @@ $SNAP
  KTH 
  ACCO 
  MKTX 
-$BEEP 
+ BEEP 
  WPRT 
  CCLDO 
  PFE 
  OCS 
  BNT 
-$FANG 
+ FANG 
  LOCL 
  SNAX 
  CBL 
@@ -6535,7 +6535,7 @@ $FANG
  APRE 
  CCNE 
  AFRM 
-$KO 
+ KO 
  SIF 
  CPRX 
  HYZNW 
@@ -6568,10 +6568,10 @@ $KO
  MNDY 
  RSBA 
  ABCB 
-$FORD 
+ FORD 
  VMAR 
  GBBK 
-$LIEN 
+ LIEN 
  GNL 
  NHPBP 
  RBRK 
@@ -6614,8 +6614,8 @@ $LIEN
  CVR 
  KBDC 
  CSLMR 
-$FIRS 
-$DRUG 
+ FIRS 
+ DRUG 
  LBBBW 
  OCCI 
  WIX 
@@ -6626,7 +6626,7 @@ $DRUG
  AEVA-WS 
  CNFRL 
  PLAB 
-$VAC 
+ VAC 
  VRT 
  GDTC 
  SPCB 
@@ -6638,18 +6638,18 @@ $VAC
  SIGI 
  CSTM 
  GNL-P-B 
-$OR 
+ OR 
  NTEST-Y 
  STHOV 
  DMYY-U 
-$BOLD 
+ BOLD 
  ODC 
  SOHOO 
  ELTX 
  IBP 
-$SHOT 
+ SHOT 
  RNERU 
-$GIFT 
+ GIFT 
  ABR-P-E 
  BNZIW 
  AUUD 
@@ -6657,7 +6657,7 @@ $GIFT
  SINT 
  NEE-P-R 
  KMB 
-$WIT 
+ WIT 
  SBT 
  SILC 
  IVDA 
@@ -6666,7 +6666,7 @@ $WIT
  NG 
  TTI 
  BACQU 
-$HOOD 
+ HOOD 
  SF-P-C 
  GLSTU 
  OPTX 
@@ -6677,7 +6677,7 @@ $HOOD
  PBHC 
  REI 
  VRCA 
-$EM 
+ EM 
  ABBV 
  MTEST 
  WDH 
@@ -6692,9 +6692,9 @@ $EM
  ISRLW 
  MSDL 
  TRNO 
-$COMP 
-$FA 
-$ALB 
+ COMP 
+ FA 
+ ALB 
  BACQR 
  MYRG 
  USB-P-S 
@@ -6702,7 +6702,7 @@ $ALB
  AURC 
  BLBX 
  IBTX 
-$FROG 
+ FROG 
  AFYA 
  FXCOW 
  AVXL 
@@ -6729,7 +6729,7 @@ $FROG
  LNTH 
  GIW 
  POWW 
-$LINK 
+ LINK 
  NVRO 
  PRSO 
  CRD-A 
@@ -6755,7 +6755,7 @@ $LINK
  GCTS-WS 
  HTHT 
  CRBD 
-$OWL 
+ OWL 
  FCEL 
  WBS-P-G 
  EURK 
@@ -6785,13 +6785,13 @@ $OWL
  HLIO 
  BRLIW 
  KRUS 
-$AGO 
+ AGO 
  TMUS 
  USAP 
  CSGS 
  CAG 
  PFSI 
-$GIS 
+ GIS 
  GSAT 
  SPRO 
  UVSP 
@@ -6809,12 +6809,12 @@ $GIS
  MFSV 
  USB 
  FRZA 
-$GOGO 
+ GOGO 
  RMMZ 
  SER 
  HOLX 
  GIGGW 
-$ANNA 
+ ANNA 
  GPK 
  SBCF 
  CREX 
@@ -6822,7 +6822,7 @@ $ANNA
  NODK 
  SARO 
  FCFS 
-$JILL 
+ JILL 
  VVOS 
  CRDF 
  COYA 
@@ -6830,14 +6830,14 @@ $JILL
  NOV 
  ARVN 
  MNTS 
-$ACT 
+ ACT 
  GDV-P-H 
  DISTU 
  NXDT-P-A 
-$APT 
-$CAMP 
+ APT 
+ CAMP 
  GAUZ 
-$ELSE 
+ ELSE 
  ETON 
  IRS 
  AZN 
@@ -6850,13 +6850,13 @@ $ELSE
  DCO 
  AUR 
  GNS 
-$HOWL 
+ HOWL 
  ACMR 
-$RELY 
+ RELY 
  JNVR 
  PAVMZ 
  INBK 
-$CUBE 
+ CUBE 
  APM 
  GHC 
  SCE-P-L 
@@ -6877,7 +6877,7 @@ $CUBE
  IPXXU 
  INOD 
  ICCC 
-$EAST 
+ EAST 
  FLR 
  BTMWW 
  TWFG 
@@ -6896,15 +6896,15 @@ $EAST
  REAX 
  TNDM 
  INN-P-E 
-$KEY 
+ KEY 
  IMMR 
  UTZ 
-$FIX 
+ FIX 
  AIRJW 
  PTIX 
  BLEUW 
  CLOV 
-$SAND 
+ SAND 
  APAM 
  AIHS 
  UGP 
@@ -6939,13 +6939,13 @@ $SAND
  OCSAW 
  ZEUS 
  EFC 
-$FURY 
+ FURY 
  ARQQ 
  RCUS 
  PNFPP 
  IHRT 
  AMAL 
-$BOOM 
+ BOOM 
  LCFYW 
  ATEN 
  APVO 
@@ -6976,11 +6976,11 @@ $BOOM
  PRCH 
  NXDT 
  SWIN 
-$RAIL 
+ RAIL 
  ARMN 
-$DOW 
+ DOW 
  TLSI 
-$ALMS 
+ ALMS 
  JPM-P-M 
  ACR-P-C 
  INZY 
@@ -6993,16 +6993,16 @@ $ALMS
  CRI 
  OMH 
  FNB 
-$GEN 
+ GEN 
  NNDM 
  LGND 
  PERF 
  SRCE 
  LSPRU 
  LGV-WS 
-$HIT 
+ HIT 
  SGBX 
-$REAL 
+ REAL 
  VBTX 
  PMCB 
  HEES 
@@ -7010,10 +7010,10 @@ $REAL
  ELUT 
  BRKL 
  CVEO 
-$FET 
+ FET 
  EXR 
  RMTI 
-$GATE 
+ GATE 
  HUDI 
  RITM 
  LXU 
@@ -7049,7 +7049,7 @@ $GATE
  GLBLW 
  LVS 
  PTEST 
-$FIGS 
+ FIGS 
  GWAV 
  NTRB 
  MPLN-WS 
@@ -7082,23 +7082,23 @@ $FIGS
  MESO 
  PCRX 
  GNRC 
-$RAPT 
+ RAPT 
  ACR 
  EVTV 
  VHAI-WS-A 
-$PIXY 
+ PIXY 
  CRGOW 
  CVII 
  TMAC-U 
  HTLD 
-$PONY 
+ PONY 
  HHGCW 
  PAYX 
  WBX-WS 
  AHI 
  YMM 
  SPBW 
-$OPEN 
+ OPEN 
  AIZN 
  APO-P-A 
  APOG 
@@ -7108,7 +7108,7 @@ $OPEN
  ZNTL 
  RMR 
  INTC 
-$IONS 
+ IONS 
  SCE-P-J 
  SCCG 
  GBBKW 
@@ -7128,12 +7128,12 @@ $IONS
  GFAI 
  NTEST-C 
  TRMD 
-$NAMS 
+ NAMS 
  FTAAW 
  MGEE 
  DPRO 
  FUNC 
-$DIT 
+ DIT 
  BLTE 
  CAVA 
  DHT 
@@ -7149,21 +7149,21 @@ $DIT
  DSS 
  IPB 
  FREY-WS 
-$TWO 
+ TWO 
  ACET 
  STEL 
  BLACR 
  PRZO 
-$FUND 
+ FUND 
  APTO 
  TMCWW 
  UBXG 
  RGCO 
  CLRB 
-$DORM 
+ DORM 
  HORIU 
  RVLV 
-$PEN 
+ PEN 
  TIGR 
  BDCX 
  YMAB 
@@ -7182,7 +7182,7 @@ $PEN
  BCAB 
  VAL-WS 
  NTCT 
-$SAT 
+ SAT 
  MSPRZ 
  LAC-W 
  EVBN 
@@ -7191,7 +7191,7 @@ $SAT
  STAF 
  AXSM 
  NNAVW 
-$SAFE 
+ SAFE 
  FTAIO 
  REKR 
  LBRT 
@@ -7222,9 +7222,9 @@ $SAFE
  NEWTZ 
  GUT-P-C 
  ECVT 
-$BAP 
+ BAP 
  OHPAU 
-$COKE 
+ COKE 
  CAPL 
  ENVA 
  RGLD 
@@ -7251,7 +7251,7 @@ $COKE
  CMND 
  SR 
  SLVM 
-$DAWN 
+ DAWN 
  CFBK 
  CNX 
  ASRV 
@@ -7274,7 +7274,7 @@ $DAWN
  WTS 
  GTES 
  PSA-P-M 
-$CIG 
+ CIG 
  LSF 
  NOVVW 
  INGM 
@@ -7294,7 +7294,7 @@ $CIG
  JANU 
  THRN 
  GAIA 
-$HALO 
+ HALO 
  NCZ-P-A 
  RKDA 
  NXGLW 
@@ -7309,10 +7309,10 @@ $HALO
  NEWTH 
  CYTK 
  BTBDW 
-$CON 
+ CON 
  OCEA 
-$GOOS 
-$PHI 
+ GOOS 
+ PHI 
  BIAF 
  OPK 
  JSPR 
@@ -7337,13 +7337,13 @@ $PHI
  ASML 
  ASO 
  RCKY 
-$RACE 
+ RACE 
  GEG 
  NEOG 
  FACTW 
  AFGB 
  CIM-P-A 
-$PERI 
+ PERI 
  ANSCU 
  HIG-P-G 
  TNXP 
@@ -7355,7 +7355,7 @@ $PERI
  AMODW 
  CURI 
  HIPO 
-$BIO 
+ BIO 
  GTX 
  RC 
  MSC 
@@ -7366,15 +7366,15 @@ $BIO
  CTNT 
  ISRLU 
  MKL 
-$ZETA 
+ ZETA 
  GDXD 
  KVAC 
  LNG 
  AISPW 
  CUTR 
  SN 
-$ARCH 
-$CERT 
+ ARCH 
+ CERT 
  CTNM 
  GRCL 
  RVTY 
@@ -7383,7 +7383,7 @@ $CERT
  OBDE 
  BC/PB 
  GFL 
-$ACRE 
+ ACRE 
  HNRG 
  BRACR 
  CRS 
@@ -7398,29 +7398,29 @@ $ACRE
  CPK 
  BPTH 
  CRAI 
-$EL 
+ EL 
  VRTS 
  ALRS 
  SPHAU 
  CLBR 
  AENTW 
-$SHIP 
+ SHIP 
  ZCZZT 
  GVCI 
  ARAY 
  FMST 
  ONBPO 
  SNV-P-E 
-$GOLD 
-$AGEN 
+ GOLD 
+ AGEN 
  IRWD 
-$FISK 
+ FISK 
  ATRC 
  NTAP 
  ASPC 
  HOLO 
  TRT 
-$OI 
+ OI 
  KRYS 
  BOTJ 
  BPYPN 
@@ -7447,7 +7447,7 @@ $OI
  ODV 
  SMP 
  HTBI 
-$TEL 
+ TEL 
  RDZN 
  LLY 
  ORIS 
@@ -7473,7 +7473,7 @@ $TEL
  FAASW 
  DXC 
  NTEST-G 
-$ON 
+ ON 
  BTMDW 
  CKPT 
  XFLT-P-A 
@@ -7488,7 +7488,7 @@ $ON
  DVAX 
  YALA 
  QBTS-WS 
-$FORA 
+ FORA 
  AORT 
  TCMD 
  NSPR 
@@ -7514,10 +7514,10 @@ $FORA
  SILV 
  EMCGU 
  PLD 
-$BEAT 
+ BEAT 
  OSBC 
  LBYAV 
-$DARE 
+ DARE 
  AVD 
  T 
  ALDX 
@@ -7525,7 +7525,7 @@ $DARE
  TGTX 
  WU 
  SDA 
-$GOLF 
+ GOLF 
  USEG 
  KRNT 
  M 

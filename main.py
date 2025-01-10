@@ -35,9 +35,8 @@ def main():
         timer = Timer()
         
         # Process data for different timeframes
-        timeframes = [1]
         timer.start("Getting submissions from Reddit.")
-        submissions = reddit_scraper.get_submissions(max(timeframes))
+        submissions = reddit_scraper.get_submissions(days=1)
         timer.end()
         timer.get_elapsed_time(f"Got {len(submissions)} submissions in %m seconds.")
         
@@ -49,7 +48,7 @@ def main():
         
         # Generate report
         timer.start("Generating report.")
-        report = data_processor.generate_report(sentiment_data, timeframes)
+        report = data_processor.generate_report(sentiment_data, days=1)
         timer.end()
         timer.get_elapsed_time("Generated report in %m seconds.")
         
