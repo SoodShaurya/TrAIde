@@ -1,33 +1,31 @@
 # src/data_processor.py
 import pandas as pd
-from typing import List
+from typing import List, Dict
 import logging
+from datetime import datetime
 
 class DataProcessor:
-    @staticmethod
-    def generate_report(df: pd.DataFrame, timeframes: List[int]) -> pd.DataFrame:
-        """Generate sentiment report for specified timeframes"""
-        all_data = []
+    def __init__(self, sentiment_analyzer, mongodb_collection):
+        self.sentiment_analyzer = sentiment_analyzer
+        self.collection = mongodb_collection
         
-        for timeframe in timeframes:
-            try:
-                # Filter data for timeframe
-                cutoff = pd.Timestamp.now() - pd.Timedelta(days=timeframe)
-                timeframe_data = df[df['timestamp'] > cutoff]
-                
-                if not timeframe_data.empty:
-                    # Calculate metrics
-                    metrics = timeframe_data.groupby('symbol').agg({
-                        'sentiment': ['mean', 'count', lambda x: (x > 0).mean()],
-                        'score': 'sum'
-                    })
-                    
-                    metrics.columns = ['avg_sentiment', 'mention_count', 'bullish_ratio', 'total_score']
-                    metrics['timeframe_days'] = timeframe
-                    all_data.append(metrics.reset_index())
-                
-            except Exception as e:
-                logging.error(f"Error processing timeframe {timeframe}: {e}")
-                continue
-                
-        return pd.concat(all_data, ignore_index=True) if all_data else pd.DataFrame()
+    def process_item(self, item_data: Dict):
+        try:
+            # Analyze sentiment
+            sentiment_scores = self.sentiment_analyzer.analyze_text(item_data['content'])
+            
+            # Enrich the document
+            item_data['sentiment_scores'] = sentiment_scores
+            item_data['compound_score'] = sentiment_scores['compound_score']
+            
+            # Console output
+            print(f"\nNew {item_data['type']} processed:")
+            print(f"Content: {item_data['content'][:200]}...")
+            print(f"Tickers: {item_data['tickers']}")
+            print(f"Sentiment: {sentiment_scores}")
+            
+            # Store in MongoDB
+            self.collection.insert_one(item_data)
+            
+        except Exception as e:
+            logging.error(f"Error processing {item_data['type']}: {e}")
