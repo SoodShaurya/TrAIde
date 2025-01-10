@@ -4,9 +4,8 @@ from src.stock_manager import StockManager
 from src.reddit_scraper import RedditScraper
 from src.sentiment_analyzer import SentimentAnalyzer
 from src.data_processor import DataProcessor
-
 from config.__init__ import load_config
-
+from pymongo import MongoClient
 from utils.logger import setup_logger
 from src.timers import Timer
 
@@ -15,8 +14,14 @@ import os
 import pandas as pd
 from datetime import datetime
 import os
-
 from src.data_grabber import grab_data
+
+def initialize_mongodb():
+    # Initialize MongoDB connection
+    client = MongoClient("mongodb://localhost:27017/")  # Replace with your connection string
+    db = client["global"]  # Database name
+    collection = db["posts"]  # Collection name
+    return collection
 
 def main():
     setup_logger()
@@ -29,7 +34,8 @@ def main():
             stock_symbols = {line.strip() for line in file}
             file.close()
         
-        reddit_scraper = RedditScraper(dict(config['REDDIT']), stock_symbols)
+
+        reddit_scraper = RedditScraper(dict(config['REDDIT']), stock_symbols, collection)
         sentiment_analyzer = SentimentAnalyzer()
         data_processor = DataProcessor()
         timer = Timer()
@@ -65,4 +71,6 @@ def main():
         raise
 
 if __name__ == "__main__":
+    collection = initialize_mongodb()
+    print("MongoDB initialized and collection ready.")
     main()
