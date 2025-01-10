@@ -16,7 +16,7 @@ class RedditScraper:
 
     def extract_stock_mentions(self, text: str) -> List[str]:
         """Extract valid stock symbols from text"""
-        words = text.upper().split()
+        words = text.split()
         return [word for word in words if word in self.stock_symbols]
 
     def get_submissions(self, timeframe: int) -> List[Dict]:

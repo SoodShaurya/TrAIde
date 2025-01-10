@@ -3,4 +3,3 @@ praw
 pandas
 requests
 vaderSentiment
-nltk

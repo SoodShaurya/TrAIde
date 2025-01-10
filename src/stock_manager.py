@@ -20,9 +20,8 @@ class StockManager:
             try:
                 url = f"{self.base_url}?function=LISTING_STATUS&apikey={self.api_key}"
                 df = pd.read_csv(url)
-                with open("data/listing_status.csv", "w+") as file:
-                    file.write(df.to_string())
-                    file.close()
+                df.to_csv("./data/listing_status.csv")
+                # df = pd.read_csv("./data/listing_status.csv")
                 self.symbols = set(df[df['assetType'] == 'Stock']['symbol'].values)
                 self.last_update = current_time
                 logging.info(f"Updated stock symbols. Total count: {len(self.symbols)}")

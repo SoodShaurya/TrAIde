@@ -12,3 +12,4 @@ TODO
 
 COMPLETED
 - everything before we had a todo
+- wrote a timer

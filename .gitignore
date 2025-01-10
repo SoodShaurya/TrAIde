@@ -2,3 +2,6 @@ config/config.ini
 logs
 */__pycache__/*
 reports
+.vscode/*
+.gitattributes
+test.py
