@@ -54,7 +54,7 @@ def main():
         timer.get_elapsed_time("Generated report in %m seconds.")
         
         # Save report
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        timestamp = datetime.now()
         report_dir = 'reports'
         os.makedirs(report_dir, exist_ok=True)
         report.to_csv(f'reports/sentiment_report_{timestamp}.csv', index=False)
