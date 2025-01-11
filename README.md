@@ -9,8 +9,6 @@
 ### frontend
 - webUI 
 - cards for each symbol and search bar
-- 
-
 
 #### low priority
 - write a model for sentiment analysis dedicated to market terms
