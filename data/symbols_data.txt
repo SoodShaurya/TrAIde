@@ -19,7 +19,7 @@
  GPJA 
  DXCM 
  ATHM 
- H 
+$H 
  GEVO 
  ACHC 
  CANB 
@@ -55,7 +55,7 @@ $THAR
  TY-P 
  TNON 
 $NOTE 
- F 
+$F 
  SPXC 
  ANG-P-B 
  MCK 
@@ -815,7 +815,7 @@ $BAM
  VLY 
  RSI 
  ACIC 
- C 
+$C 
  AVY 
  LXEO 
  NDSN 
@@ -1767,7 +1767,7 @@ $AE
  NYMTI 
  MTC 
  VZLA 
- A 
+$A 
 $CADE 
  EPAM 
  BKV 
@@ -2331,7 +2331,7 @@ $AGIO
  FDS 
  PEBO 
 $SWIM 
- D 
+$D 
  ZBH 
  GRFS 
  AMKR 
@@ -3193,7 +3193,7 @@ $TRIN
  KMDA 
  NRXS 
  WENA 
- U 
+$U 
 $BASE 
  CNEY 
  NDAC 
@@ -3669,7 +3669,7 @@ $MAMA
  VCICU 
 $GOOD 
  QOMOU 
- B 
+$B 
  IBN 
  NTWK 
 $FAST 
@@ -5360,7 +5360,7 @@ $THO
  SKLZ 
  PXDT 
  ZUMZ 
- E 
+$E 
  COE 
  HNVR 
  NTBL 
@@ -5776,7 +5776,7 @@ $TARS
  LMACU 
  SJW 
  ANGHW 
- G 
+$G 
  BPYPM 
  ALCO 
  CLIR 

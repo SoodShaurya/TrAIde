@@ -1,20 +1,16 @@
 # main.py
 import configparser
+import logging
+from pymongo import MongoClient
+
 from src.stock_manager import StockManager
 from src.reddit_scraper import RedditScraper
 from src.sentiment_analyzer import SentimentAnalyzer
 from src.data_processor import DataProcessor
+from src.data_grabber import grab_data
 from config.__init__ import load_config
-from pymongo import MongoClient
 from utils.logger import setup_logger
 from utils.timers import Timer
-
-import logging
-import os
-import pandas as pd
-from datetime import datetime
-import os
-from src.data_grabber import grab_data
 
 def initialize_mongodb():
     # Initialize MongoDB connection
@@ -51,4 +47,5 @@ def main():
         raise
 
 if __name__ == "__main__":
+
     main()
