@@ -39,7 +39,7 @@ class RedditScraper:
                 'author': submission.author.name if submission.author else None,
                 'subreddit': submission.subreddit.display_name,
                 'upvotes': submission.score,
-                'timestamp': datetime.utcfromtimestamp(submission.created_utc).isoformat(),
+                'timestamp': int(submission.created_utc),
                 'url': f"https://reddit.com{submission.permalink}",
                 'scraped_at': datetime.utcnow().isoformat()
             }
@@ -57,7 +57,7 @@ class RedditScraper:
                 'author': comment.author.name if comment.author else None,
                 'subreddit': comment.subreddit.display_name,
                 'upvotes': comment.score,
-                'timestamp': datetime.utcfromtimestamp(comment.created_utc).isoformat(),
+                'timestamp': int(comment.created_utc),
                 'url': f"https://reddit.com{comment.permalink}",
                 'scraped_at': datetime.utcnow().isoformat()
             }

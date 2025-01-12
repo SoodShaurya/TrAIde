@@ -5,6 +5,7 @@
 
 - weightage system for more important people and higher comment scores
 - write automated symbol caching system (time interval, every day?)
+- write a grapher system that allows you to select a timeframe and then gives blocks of the average sentiment and average stock price going back by those stocks
 
 ### frontend
 - webUI 

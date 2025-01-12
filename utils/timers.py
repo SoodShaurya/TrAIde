@@ -13,7 +13,7 @@ class Timer:
             logging.info(message)
         self.startTime = datetime.now()
     
-    def stop4(self, message = ""):
+    def stop(self, message = ""):
         """End the timer. Can also log messages"""
         if message != "":
             logging.info(message)
