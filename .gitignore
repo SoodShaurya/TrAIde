@@ -1,8 +1,8 @@
 config/config.ini
-logs
+logs/*
 */__pycache__/*
-reports
+reports/*
 .vscode/*
 .gitattributes
-test.py
+./test.py
 */.DS_STORE
