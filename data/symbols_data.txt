@@ -1094,7 +1094,7 @@ $SPOT
  NDAQ 
  OXSQ 
  CINF 
- Z 
+$Z 
  ROST 
  SMMT 
  BRLT 
@@ -2294,7 +2294,7 @@ $RIOT
  BLDP 
  APD 
 $SON 
- L 
+$L 
  APLM 
  CCRN 
  MAXN 
@@ -2475,7 +2475,7 @@ $MAT
 $IRON 
  CAMT 
  LCAA 
- R 
+$R 
  VACH 
  XAIR 
  GWH-WS 
@@ -2949,7 +2949,7 @@ $COST
  PSA-P-H 
  DLR-P-K 
 $ELAN 
- S 
+$S 
  MDRR 
  HODL 
  HST 
@@ -3339,7 +3339,7 @@ $LUV
  CVKD 
  AEAEU 
  CLCO 
- O 
+$O 
 $TREE 
  CIVI 
  ESQ 
@@ -3581,7 +3581,7 @@ $SAP
  TRMB 
 $DELL 
  CHEB 
- V 
+$V 
  TTMI 
  LVRO 
  RFIX 
@@ -3707,7 +3707,7 @@ $SAM
  CXM 
  BERZ 
 $COOP 
- NGL 
+$NGL 
  GD 
  INLF 
 $DIBS 
@@ -3947,7 +3947,7 @@ $WEYS
  JSPRW 
  LMB 
  MSS 
- DD 
+$DD 
  SITC 
  TRINL 
  AFL 
@@ -4308,7 +4308,7 @@ $STEM
  GNE 
  PRCT 
  OAKUU 
- W 
+$W 
  CYD 
  BIPC 
  SOJD 
@@ -5350,7 +5350,7 @@ $PED
  VCYT 
 $THO 
  HAIAW 
- K 
+$K 
  ENVX 
  TPR 
  GALT 
@@ -6071,7 +6071,7 @@ $ZONE
  ARGO-P-A 
  CL 
  AXAC-R 
- J 
+$J 
  RNR-P-F 
  SMAR 
  FBLG 
@@ -6509,7 +6509,7 @@ $FANG
  BNIXR 
  BAYAU 
  COGT 
- X 
+$X 
  CURV 
  SGMO 
  SPT 
@@ -7519,7 +7519,7 @@ $BEAT
  LBYAV 
 $DARE 
  AVD 
- T 
+$T 
  ALDX 
  GLW 
  TGTX 
@@ -7528,7 +7528,7 @@ $DARE
 $GOLF 
  USEG 
  KRNT 
- M 
+$M 
  DQ 
  LTRY 
  WCC 
