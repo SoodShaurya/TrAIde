@@ -5,3 +5,4 @@ reports
 .vscode/*
 .gitattributes
 test.py
+*/.DS_STORE
