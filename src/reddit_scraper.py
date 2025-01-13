@@ -10,13 +10,15 @@ from pymongo import MongoClient
 from concurrent.futures import ThreadPoolExecutor
 
 class RedditScraper:
-    def __init__(self, reddit_config: dict, stock_symbols: set, data_processor):
+    def __init__(self, reddit_config: dict, data_processor):
         self.reddit = praw.Reddit(
             client_id=reddit_config['client_id'],
             client_secret=reddit_config['client_secret'],
             user_agent=reddit_config['user_agent']
         )
-        self.stock_symbols = stock_symbols
+        with open("data/symbols_data.txt", "r") as file:
+            self.stock_symbols = {line.strip() for line in file}
+            file.close()
         self.subreddits = reddit_config['subreddits'].split(',')
         self.data_processor = data_processor
         self.executor = ThreadPoolExecutor(max_workers=2)
@@ -92,3 +94,14 @@ class RedditScraper:
             except Exception as e:
                 logging.error(f"Error setting up stream for subreddit {subreddit_name}: {e}")
                 continue
+
+    def fetch_posts(self, n):
+        """Retrospectively retrieve n posts and the comments on each post"""
+        for subreddit_name in self.subreddits:
+            subreddit = self.reddit.subreddit(subreddit_name)
+            for submission in subreddit.new(limit=n):
+                self.process_submission(submission)
+                submission.comments.replace_more(limit=None)
+                for comment in submission.comments.list():
+                    self.process_comment(comment)
+        
