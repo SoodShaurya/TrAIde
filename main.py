@@ -30,7 +30,7 @@ def main():
         timer = Timer()
 
         timer.start()
-        reddit_scraper.fetch_posts(100)
+        reddit_scraper.fetch_posts(1000)
         timer.stop()
         timer.get_elapsed_time("Time to fetch posts: %m seconds")
 

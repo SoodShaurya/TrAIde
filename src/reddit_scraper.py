@@ -1,13 +1,14 @@
 # src/reddit_scraper.py
 import praw
-from datetime import datetime, timedelta
-from typing import List, Dict
+from datetime import datetime
 import logging
 import praw
 from datetime import datetime
 import logging
-from pymongo import MongoClient
 from concurrent.futures import ThreadPoolExecutor
+import time
+
+import praw.exceptions
 
 class RedditScraper:
     def __init__(self, reddit_config: dict, data_processor):
@@ -99,9 +100,13 @@ class RedditScraper:
         """Retrospectively retrieve n posts and the comments on each post"""
         for subreddit_name in self.subreddits:
             subreddit = self.reddit.subreddit(subreddit_name)
-            for submission in subreddit.new(limit=n):
-                self.process_submission(submission)
-                submission.comments.replace_more(limit=None)
-                for comment in submission.comments.list():
-                    self.process_comment(comment)
+            try:
+                for submission in subreddit.new(limit=n):
+                    self.process_submission(submission)
+                    submission.comments.replace_more(limit=20)
+                    for comment in submission.comments.list():
+                        self.process_comment(comment)
+            except Exception as e:
+                logging.error(f"Error fetching posts from r/{subreddit_name}: {e}")
+                time.sleep(60)
         
