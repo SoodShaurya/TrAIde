@@ -1,14 +1,10 @@
 # src/reddit_scraper.py
 import praw
-from datetime import datetime
 import logging
-import praw
-from datetime import datetime
-import logging
-from concurrent.futures import ThreadPoolExecutor
 import time
 
-import praw.exceptions
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
 
 class RedditScraper:
     def __init__(self, reddit_config: dict, data_processor):

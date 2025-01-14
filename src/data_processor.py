@@ -1,8 +1,7 @@
 # src/data_processor.py
-import pandas as pd
-from typing import List, Dict
 import logging
-from datetime import datetime
+
+from typing import Dict
 
 class DataProcessor:
     def __init__(self, sentiment_analyzer, mongodb_collection):

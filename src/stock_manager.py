@@ -1,9 +1,9 @@
 # src/stock_manager.py
-import requests
 import pandas as pd
-from typing import Set
 import logging
 import time
+
+from typing import Set
 
 class StockManager:
     def __init__(self, api_key: str):

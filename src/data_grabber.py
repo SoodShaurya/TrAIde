@@ -1,10 +1,8 @@
-import configparser
-import pandas as pd
 import logging
-from src.stock_manager import StockManager
 import os
-from config.__init__ import load_config
 
+from config.__init__ import load_config
+from src.stock_manager import StockManager
 
 def grab_data():
     config = load_config()

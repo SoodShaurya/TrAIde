@@ -1,14 +1,15 @@
 # main.py
 import logging
 
+from config.__init__ import load_config
+
 from src.reddit_scraper import RedditScraper
 from src.models import SentimentAnalyzer
 from src.data_processor import DataProcessor
 from src.data_grabber import grab_data
-from config.__init__ import load_config
+
 from utils.logger import setup_logger
 from utils.timers import Timer
-
 from utils.mongo import initialize_mongodb
 
 # main.py
@@ -33,7 +34,7 @@ def main():
         # reddit_scraper.fetch_posts(10000)
         # timer.stop()
         # timer.get_elapsed_time("Time to fetch posts: %m seconds")
-        
+
         logging.info("Starting Reddit stream...")
         reddit_scraper.stream_content()
         

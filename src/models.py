@@ -1,11 +1,9 @@
 # src/sentiment_analyzer.py
-import re
-import numpy as np
 import logging
 
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer
-from typing import List, Tuple, Dict
+from typing import Dict
 
 class SentimentAnalyzer:
     def __init__(self):

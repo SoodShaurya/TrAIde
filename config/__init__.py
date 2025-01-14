@@ -1,7 +1,6 @@
 # config/__init__.py
 import os
 import configparser
-from typing import Dict
 
 def load_config() -> configparser.ConfigParser:
     config_dir = 'config'
