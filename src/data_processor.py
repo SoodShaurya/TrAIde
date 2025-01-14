@@ -8,6 +8,9 @@ class DataProcessor:
     def __init__(self, sentiment_analyzer, mongodb_collection):
         self.sentiment_analyzer = sentiment_analyzer
         self.collection = mongodb_collection
+
+    def item_exists(self, item_id):
+        return self.collection.find_one({'_id': item_id})
         
     def process_item(self, item_data: Dict):
         try:

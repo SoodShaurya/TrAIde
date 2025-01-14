@@ -102,11 +102,16 @@ class RedditScraper:
             subreddit = self.reddit.subreddit(subreddit_name)
             try:
                 for submission in subreddit.new(limit=n):
+                    if self.data_processor.item_exists(submission.id):
+                        logging.info(f"Skipping post {submission.id}")
+                        continue  
                     self.process_submission(submission)
                     submission.comments.replace_more(limit=20)
                     for comment in submission.comments.list():
+                        if self.data_processor.item_exists(comment.id):
+                            logging.info(f"Skipping comment {comment.id}")
+                            continue
                         self.process_comment(comment)
             except Exception as e:
                 logging.error(f"Error fetching posts from r/{subreddit_name}: {e}")
                 time.sleep(60)
-        

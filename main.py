@@ -27,15 +27,8 @@ def main():
             data_processor
         )
 
-        timer = Timer()
-
-        timer.start()
-        reddit_scraper.fetch_posts(1000)
-        timer.stop()
-        timer.get_elapsed_time("Time to fetch posts: %m seconds")
-
-        # logging.info("Starting Reddit stream...")
-        # reddit_scraper.stream_content()
+        logging.info("Starting Reddit stream...")
+        reddit_scraper.stream_content()
         
     except Exception as e:
         logging.error(f"Main execution failed: {e}")

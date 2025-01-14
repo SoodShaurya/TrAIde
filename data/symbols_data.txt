@@ -4665,8 +4665,8 @@ $MIR
  BJ 
 $SUN 
  GRDN 
- IR 
- DM 
+$IR 
+$DM 
  VEL 
  ZBAI 
  NYAX 
