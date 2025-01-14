@@ -104,9 +104,9 @@ class RedditScraper:
                 for submission in subreddit.new(limit=n):
                     if self.data_processor.item_exists(submission.id):
                         logging.info(f"Skipping post {submission.id}")
-                        continue  
+                        continue
                     self.process_submission(submission)
-                    submission.comments.replace_more(limit=20)
+                    submission.comments.replace_more(limit=100)
                     for comment in submission.comments.list():
                         if self.data_processor.item_exists(comment.id):
                             logging.info(f"Skipping comment {comment.id}")

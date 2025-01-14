@@ -874,7 +874,7 @@ $COP
  SATX 
  LXEH 
  SNRE 
- AGI 
+$AGI 
  BFRG 
  MTRN 
  ASTS 
@@ -6031,7 +6031,7 @@ $SUM
  AJG 
 $WAT 
  AMRS 
- PC 
+$PC 
  VMCAU 
  GLXG 
  HMACU 

@@ -27,6 +27,13 @@ def main():
             data_processor
         )
 
+        # timer = Timer()
+
+        # timer.start()
+        # reddit_scraper.fetch_posts(10000)
+        # timer.stop()
+        # timer.get_elapsed_time("Time to fetch posts: %m seconds")
+        
         logging.info("Starting Reddit stream...")
         reddit_scraper.stream_content()
         
