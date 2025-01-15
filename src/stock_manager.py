@@ -2,16 +2,18 @@
 import pandas as pd
 import logging
 import time
+import os
 
 from typing import Set
 
 class StockManager:
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, config):
         self.api_key = api_key
         self.base_url = "https://www.alphavantage.co/query"
         self.symbols: Set[str] = set()
         self.last_update = 0
         self.update_interval = 24 * 60 * 60  # 24 hours in seconds
+        self.config = config
 
     def get_stock_symbols(self) -> Set[str]:
         """Retrieve and perpetually cache stock symbols from Alpha Vantage"""
@@ -30,3 +32,25 @@ class StockManager:
                 if not self.symbols:
                     raise
         return self.symbols
+    
+    def grab_data(self):
+        data_dir = "data"
+        os.makedirs(data_dir, exist_ok=True)
+
+        with open("data/dictionary.txt", "r") as file:
+            words = [line.strip() for line in file]
+            file.close()
+
+        stock_symbols = self.get_stock_symbols()
+
+        with open("data/symbols_data.txt", "w+") as file:
+            for item in stock_symbols:
+                try:
+                    if item.lower() in words:
+                        file.write(f"${item} \n")
+                    else:
+                        file.write(f" {item} \n")
+                except Exception as e:
+                    logging.error(f"Couldn't process item {item}: {e}")
+
+        logging.info(f"Symbols saved successfully: symbols_data.txt")

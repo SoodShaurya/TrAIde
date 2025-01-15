@@ -8,7 +8,7 @@ from config.__init__ import load_config
 from src.reddit_scraper import RedditScraper
 from src.models import SentimentAnalyzer
 from src.data_processor import DataProcessor
-from src.data_grabber import grab_data
+from src.stock_manager import StockManager
 from src.api import API
 
 from utils.logger import setup_logger
@@ -19,7 +19,8 @@ def setup():
     setup_logger()
     config = load_config()
     collection = initialize_mongodb()
-    return API(collection), config, collection
+    stock_manager = StockManager()
+    return API(collection), config, collection, stock_manager
 
 async def stream_data(config, collection):
     """Handles streaming data from Reddit and processing it."""
@@ -36,6 +37,10 @@ async def stream_data(config, collection):
         logging.error(f"Streaming failed: {e}")
         raise
 
+async def retrieve_symbols(stock_manager : StockManager):
+    stock_manager.grab_data()
+    asyncio.timeout(stock_manager.update_interval)
+
 async def run_server(app):
     """Runs the FastAPI server."""
     try:
@@ -50,10 +55,11 @@ async def run_server(app):
 async def main():
     """Entry point for the application. Handles both the API server and data streaming."""
     try:
-        app, config, collection = setup()
+        app, config, collection, stock_manager = setup()
         await asyncio.gather(
             run_server(app),
             stream_data(config, collection),
+            retrieve_symbols(stock_manager)
         )
     except Exception as e:
         logging.critical(f"Main execution failed: {e}")
