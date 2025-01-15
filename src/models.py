@@ -1,8 +1,7 @@
-# src/sentiment_analyzer.py
+# src/models.py
 import logging
 
 from transformers import pipeline
-from sentence_transformers import SentenceTransformer
 from typing import Dict
 
 class SentimentAnalyzer:

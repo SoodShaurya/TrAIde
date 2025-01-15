@@ -1,7 +1,8 @@
+# src/api.py
 from datetime import datetime, timedelta
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from pymongo.collection import Collection  # For type hinting
+from pymongo.collection import Collection
 
 
 class API:
@@ -46,7 +47,7 @@ class API:
         @self.app.get("/reddit/get_lb_day")
         async def sort_daily_upvotes():
             try:
-                one_day_ago = datetime.now() - timedelta(days=1)
+                one_day_ago = datetime.timestamp(datetime.now() - timedelta(days=1))
                 aggregation = self.collection.aggregate([
                     {'$match': {'timestamp': {'$gte': one_day_ago}}},
                     {'$group': {'_id': '$tickers', 'total_upvotes': {'$sum': '$upvotes'}}},

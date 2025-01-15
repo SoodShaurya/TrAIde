@@ -7,8 +7,7 @@ import os
 from typing import Set
 
 class StockManager:
-    def __init__(self, api_key: str, config):
-        self.api_key = api_key
+    def __init__(self, config):
         self.base_url = "https://www.alphavantage.co/query"
         self.symbols: Set[str] = set()
         self.last_update = 0
@@ -20,7 +19,7 @@ class StockManager:
         current_time = time.time()
         if not self.symbols or (current_time - self.last_update) > self.update_interval:
             try:
-                url = f"{self.base_url}?function=LISTING_STATUS&apikey={self.api_key}"
+                url = f"{self.base_url}?function=LISTING_STATUS&apikey={self.config['ALPHA_VANTAGE']['API_KEY']}"
                 df = pd.read_csv(url)
                 df.to_csv("./data/listing_status.csv")
                 # df = pd.read_csv("./data/listing_status.csv")
@@ -43,9 +42,11 @@ class StockManager:
 
         stock_symbols = self.get_stock_symbols()
 
-        with open("data/symbols_data.txt", "w+") as file:
+        with open("data/symbols_data.txt", "a") as file:
             for item in stock_symbols:
                 try:
+                    if item in stock_symbols:
+                        continue
                     if item.lower() in words:
                         file.write(f"${item} \n")
                     else:
