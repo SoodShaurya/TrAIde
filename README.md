@@ -3,7 +3,11 @@
 ## TODO
 - weightage system for more important people and higher comment scores
 - write automated symbol caching system (time interval, every day?)
+- use a non default port (NOT 27017) for mongodb
+
+## WORKING ON
 - api endpoint to connect to traide-web
+
 
 #### low priority
 - write a model for sentiment analysis dedicated to market terms
