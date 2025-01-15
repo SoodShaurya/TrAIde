@@ -9,3 +9,5 @@ tensorflow
 datetime
 logging
 fastapi
+uvicorn
+tf-keras
