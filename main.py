@@ -1,5 +1,7 @@
 # main.py
 import logging
+import uvicorn
+import asyncio
 
 from config.__init__ import load_config
 
@@ -7,40 +9,55 @@ from src.reddit_scraper import RedditScraper
 from src.models import SentimentAnalyzer
 from src.data_processor import DataProcessor
 from src.data_grabber import grab_data
+from src.api import API
 
 from utils.logger import setup_logger
-from utils.timers import Timer
 from utils.mongo import initialize_mongodb
 
-# main.py
-def main():
+def setup():
+    """Initializes everything needed to run the api."""
     setup_logger()
+    config = load_config()
+    collection = initialize_mongodb()
+    return API(collection), config, collection
+
+async def stream_data(config, collection):
+    """Handles streaming data from Reddit and processing it."""
     try:
-        config = load_config()
-        
-        # Initialize 
-        collection = initialize_mongodb()
-        
         sentiment_analyzer = SentimentAnalyzer()
         data_processor = DataProcessor(sentiment_analyzer, collection)
         reddit_scraper = RedditScraper(
             dict(config['REDDIT']),
-            data_processor
+            data_processor,
         )
-
-        # timer = Timer()
-
-        # timer.start()
-        # reddit_scraper.fetch_posts(10000)
-        # timer.stop()
-        # timer.get_elapsed_time("Time to fetch posts: %m seconds")
-
-        logging.info("Starting Reddit stream...")
+        logging.info("Starting Reddit streaming...")
         reddit_scraper.stream_content()
-        
     except Exception as e:
-        logging.error(f"Main execution failed: {e}")
+        logging.error(f"Streaming failed: {e}")
+        raise
+
+async def run_server(app):
+    """Runs the FastAPI server."""
+    try:
+        config = uvicorn.Config(app(), host="127.0.0.1", port=8000, reload=True)
+        server = uvicorn.Server(config)
+        logging.info("Starting API server...")
+        await server.serve()
+    except Exception as e:
+        logging.error(f"API server failed: {e}")
+        raise
+
+async def main():
+    """Entry point for the application. Handles both the API server and data streaming."""
+    try:
+        app, config, collection = setup()
+        await asyncio.gather(
+            run_server(app),
+            stream_data(config, collection),
+        )
+    except Exception as e:
+        logging.critical(f"Main execution failed: {e}")
         raise
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

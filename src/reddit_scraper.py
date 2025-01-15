@@ -65,14 +65,20 @@ class RedditScraper:
     def stream_submissions(self, subreddit):
         try:
             for submission in subreddit.stream.submissions(skip_existing=False):
-                self.process_submission(submission)
+                if self.data_processor.item_exists(submission.id):
+                    logging.info(f"Skipping post {submission.id}")
+                else:
+                    self.process_submission(submission)
         except Exception as e:
             logging.error(f"Error streaming submissions: {e}")
 
     def stream_comments(self, subreddit):
         try:
             for comment in subreddit.stream.comments(skip_existing=False):
-                self.process_comment(comment)
+                if self.data_processor.item_exists(comment.id):
+                    logging.info(f"Skipping comment {comment.id}")
+                else:     
+                    self.process_comment(comment)
         except Exception as e:
             logging.error(f"Error streaming comments: {e}")
 

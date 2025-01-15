@@ -9,7 +9,7 @@ def setup_logger():
     os.makedirs(log_dir, exist_ok=True)
     
     # Setup logging configuration
-    log_file = f'logs/sentiment_analysis_{datetime.now():%Y%m%d}.log'
+    log_file = f'logs/log_{datetime.now():%Y%m%d}.log'
     filehandler = logging.FileHandler(log_file)
     streamhandler = logging.StreamHandler()
     logging.basicConfig(
