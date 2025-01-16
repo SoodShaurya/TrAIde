@@ -18,16 +18,31 @@ class API:
         async def index():
             return {"message": "Welcome!"}
 
-        @router.get("/reddit/ticker/{ticker}")
-        async def get_ticker(ticker: str):
+        @router.get("/reddit/ticker/{ticker}/{sort}/{direction}")
+        async def get_ticker(ticker: str, sort: str, direction: int):
             try:
+                if direction != 1 and direction != -1:
+                    raise HTTPException(status_code=404, detail="Direction must be between -1 and 1.")
                 aggregation = self.collection.aggregate([
-                    {'$match': {'tickers': ticker}},
-                    {'$sort': {'timestamp': 1}}
+                    {'$match': {'tickers': ticker.upper()}},
+                    {'$sort': {sort: direction}}
                 ])
                 results = list(aggregation)
                 if not results:
                     raise HTTPException(status_code=404, detail="No data found for the given ticker.")
+                return JSONResponse(content=results)
+            except Exception as e:
+                raise HTTPException(status_code=500, detail=f"Error retrieving ticker data: {str(e)}")
+        
+        @router.get("/reddit/match/{match}/{key}")
+        async def get_ticker(match: str, key: str):
+            try:
+                aggregation = self.collection.aggregate([
+                    {'$match': {match: key}},
+                ])
+                results = list(aggregation)
+                if not results:
+                    raise HTTPException(status_code=404, detail="No data found for the given key.")
                 return JSONResponse(content=results)
             except Exception as e:
                 raise HTTPException(status_code=500, detail=f"Error retrieving ticker data: {str(e)}")
@@ -46,7 +61,7 @@ class API:
             except Exception as e:
                 raise HTTPException(status_code=500, detail=f"Error sorting upvotes: {str(e)}")
 
-        @self.app.get("/reddit/get_lb_day")
+        @router.get("/reddit/get_lb_day")
         async def sort_daily_upvotes():
             try:
                 one_day_ago = datetime.timestamp(datetime.now() - timedelta(days=1))
