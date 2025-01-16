@@ -14,11 +14,11 @@ class API:
     def _create_routes(self):
         router = APIRouter(prefix="/api/v1")
         
-        @self.app.get("/")
+        @router.get("/")
         async def index():
             return {"message": "Welcome!"}
 
-        @self.app.get("/reddit/ticker/{ticker}")
+        @router.get("/reddit/ticker/{ticker}")
         async def get_ticker(ticker: str):
             try:
                 aggregation = self.collection.aggregate([
@@ -32,7 +32,7 @@ class API:
             except Exception as e:
                 raise HTTPException(status_code=500, detail=f"Error retrieving ticker data: {str(e)}")
 
-        @self.app.get("/reddit/get_lb_alltime")
+        @router.get("/reddit/get_lb_alltime")
         async def sort_alltime_upvotes():
             try:
                 aggregation = self.collection.aggregate([
@@ -61,6 +61,8 @@ class API:
                 return JSONResponse(content=items)
             except Exception as e:
                 raise HTTPException(status_code=500, detail=f"Error sorting daily upvotes: {str(e)}")
+
+        self.app.include_router(router)
 
     def __call__(self) -> FastAPI:
         return self.app
