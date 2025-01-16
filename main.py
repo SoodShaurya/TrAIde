@@ -14,7 +14,7 @@ from utils.logger import setup_logger
 from utils.mongo import initialize_mongodb
 
 HOST = "127.0.0.1"
-PORT = 8000
+PORT = 8027
 
 def setup():
     setup_logger()

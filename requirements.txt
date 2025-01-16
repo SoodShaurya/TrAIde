@@ -7,6 +7,6 @@ transformers
 torch
 tensorflow
 datetime
-fastapi
+fastapi 
 uvicorn
 tf-keras
