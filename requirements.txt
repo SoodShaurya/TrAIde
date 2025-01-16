@@ -7,7 +7,6 @@ transformers
 torch
 tensorflow
 datetime
-logging
 fastapi
 uvicorn
 tf-keras
