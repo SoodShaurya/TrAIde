@@ -1,6 +1,6 @@
 # src/api.py
 from datetime import datetime, timedelta
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.responses import JSONResponse
 from pymongo.collection import Collection
 
@@ -12,6 +12,8 @@ class API:
         self._create_routes()
 
     def _create_routes(self):
+        router = APIRouter(prefix="/api/v1")
+        
         @self.app.get("/")
         async def index():
             return {"message": "Welcome!"}
