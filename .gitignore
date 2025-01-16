@@ -6,3 +6,4 @@ reports/*
 .gitattributes
 ./test.py
 */.DS_STORE
+.DS_STORE
