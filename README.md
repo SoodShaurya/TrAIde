@@ -4,11 +4,12 @@ TrAIde is a comprehensive tool designed to analyze market sentiment and automate
 
 ## Features
 
-- **Sentiment Analysis**: Analyze market sentiment using a dedicated model for market terms.
+- **Sentiment Analysis**: Analyze market sentiment on each symbol using a a sentiment analysis model for market terms.
 - **Automated Symbol Caching**: Automatically cache symbols daily using AlphaVantage API.
-- **API Endpoints**: Connects to [`traide-web`](https://github.com/SoodShaurya/traide-web) for seamless integration.
 - **Continuous Streaming**: Real time data streaming and analysis.
-
+- **MongoDB Data Storage**: Store all collected data for easy access.
+- **API Endpoints**: Connects to [`traide-web`](https://github.com/SoodShaurya/traide-web) for seamless integration.
+  
 ## Installation
 
 1. Clone the repository:
@@ -45,6 +46,8 @@ TrAIde is a comprehensive tool designed to analyze market sentiment and automate
 ### TODO
 
 - Implement a weightage system for more influential people and higher comment scores.
+- Implement scraping from facebook groups.
+- Implement scraping of stocks by name in addition to symbol.;
 
 #### Low Priority
 

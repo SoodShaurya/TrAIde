@@ -4,6 +4,6 @@ logs/*
 reports/*
 .vscode/*
 .gitattributes
-./test.py
 */.DS_STORE
 .DS_STORE
+test.py
