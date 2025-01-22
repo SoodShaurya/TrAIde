@@ -19,7 +19,7 @@ PORT = 8027
 def setup():
     setup_logger()
     config = load_config()
-    collection = initialize_mongodb()
+    collection = initialize_mongodb(config["MONGODB"]["port"])
     stock_manager = StockManager(config)
     return API(collection), config, collection, stock_manager
 

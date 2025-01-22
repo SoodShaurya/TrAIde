@@ -2,11 +2,10 @@ import logging
 
 from pymongo import MongoClient
 
-
-def initialize_mongodb():
+def initialize_mongodb(port):
     # Initialize MongoDB connection
     logging.info("Initializing MongoDB connection.")
-    client = MongoClient("mongodb://localhost:27027")  # Replace with your connection string
+    client = MongoClient(f"mongodb://localhost:{port}")  # Replace with your connection string
     db = client["global"]  # Database name
     collection = db["posts"]  # Collection name
     return collection
