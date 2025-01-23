@@ -4,11 +4,11 @@ import asyncio
 
 from config.__init__ import load_config
 
-from src.reddit_scraper import RedditScraper
-from src.models import SentimentAnalyzer
-from src.data_processor import DataProcessor
-from symbol_manager import SymbolManager
-from src.api import API
+from src.scrapers.reddit_scraper import RedditScraper
+from src.backend.models import SentimentAnalyzer
+from src.scrapers.data_processor import DataProcessor
+from src.backend.symbol_manager import SymbolManager
+from src.backend.api import API
 
 from utils.logger import setup_logger
 from utils.mongo import initialize_mongodb
@@ -27,10 +27,7 @@ async def stream_data(config, collection):
     try:
         sentiment_analyzer = SentimentAnalyzer()
         data_processor = DataProcessor(sentiment_analyzer, collection)
-        reddit_scraper = RedditScraper(
-            dict(config['REDDIT']),
-            data_processor,
-        )
+        reddit_scraper = RedditScraper(dict(config['REDDIT']), data_processor)
         logging.info("Starting Reddit streaming...")
         reddit_scraper.stream_content()
     except Exception as e:
@@ -45,7 +42,7 @@ async def retrieve_symbols(stock_manager: SymbolManager):
             stock_manager.grab_data()
         except Exception as e:
             logging.error(f"Error in retrieve_symbols: {e}")
-            await asyncio.sleep(60)  # Retry after 60 seconds if an error occurs
+            await asyncio.sleep(60)
 
 async def run_server(app):
     try:
