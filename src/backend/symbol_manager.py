@@ -6,7 +6,7 @@ import os
 
 from typing import Set
 
-class StockManager:
+class SymbolManager:
     def __init__(self, config):
         self.base_url = "https://www.alphavantage.co/query"
         self.symbols: Set[str] = set()

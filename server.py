@@ -7,7 +7,7 @@ from config.__init__ import load_config
 from src.reddit_scraper import RedditScraper
 from src.models import SentimentAnalyzer
 from src.data_processor import DataProcessor
-from src.stock_manager import StockManager
+from symbol_manager import SymbolManager
 from src.api import API
 
 from utils.logger import setup_logger
@@ -20,7 +20,7 @@ def setup():
     setup_logger()
     config = load_config()
     collection = initialize_mongodb(config["MONGODB"]["port"])
-    stock_manager = StockManager(config)
+    stock_manager = SymbolManager(config)
     return API(collection), config, collection, stock_manager
 
 async def stream_data(config, collection):
@@ -37,7 +37,7 @@ async def stream_data(config, collection):
         logging.error(f"Streaming failed: {e}")
         raise
 
-async def retrieve_symbols(stock_manager: StockManager):
+async def retrieve_symbols(stock_manager: SymbolManager):
     while True:
         try:
             await asyncio.sleep(stock_manager.update_interval)
