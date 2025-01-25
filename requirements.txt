@@ -10,3 +10,4 @@ datetime
 fastapi 
 uvicorn
 tf-keras
+yfinance
