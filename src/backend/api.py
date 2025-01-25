@@ -53,18 +53,33 @@ class API:
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error sorting upvotes: {str(e)}")
         
-    def sort_daily_upvotes(self):
+    def sort_daily_upvotes(self, timestamp):
         try:
-            one_day_ago = datetime.timestamp(datetime.now() - timedelta(days=1))
+            timestamp = int(timestamp)
+            # Convert Unix timestamp to datetime
+            input_datetime = datetime.fromtimestamp(timestamp)
+            
+            # Calculate the start and end of the day
+            start_of_day = input_datetime.replace(hour=0, minute=0, second=0, microsecond=0)
+            end_of_day = start_of_day + timedelta(days=1)
+            
+            # Convert back to Unix timestamps
+            start_timestamp = start_of_day.timestamp()
+            end_timestamp = end_of_day.timestamp()
+            
             aggregation = self.collection.aggregate([
-                {'$match': {'timestamp': {'$gte': one_day_ago}}},
+                {'$match': {'timestamp': {'$gte': start_timestamp, '$lt': end_timestamp}}},
                 {'$group': {'_id': '$tickers', 'total_upvotes': {'$sum': '$upvotes'}}},
                 {'$sort': {'total_upvotes': -1}}
             ])
+            
             items = [item for item in aggregation if len(item['_id']) == 1]
+            
             if not items:
-                raise HTTPException(status_code=404, detail="No data available for the last 24 hours.")
+                raise HTTPException(status_code=404, detail="No data available for the specified day.")
+            
             return JSONResponse(content=items)
+        
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error sorting daily upvotes: {str(e)}")
 
@@ -87,9 +102,9 @@ class API:
         async def sort_alltime_upvotes_route():
             return self.sort_alltime_upvotes()
 
-        @router.get("/reddit/get_lb_day")
-        async def sort_daily_upvotes_route():
-            return self.sort_daily_upvotes()
+        @router.get("/reddit/get_lb_day/{timestamp_day}")
+        async def sort_daily_upvotes_route(timestamp_day):
+            return self.sort_daily_upvotes(timestamp_day)
 
         self.app.include_router(router)
 
