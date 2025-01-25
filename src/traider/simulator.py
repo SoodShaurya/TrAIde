@@ -6,12 +6,17 @@ class Simulator:
         self.balance = initial_balance
         self.portfolio = {}
         self.transaction_history = []
+        self.start_date = (datetime.datetime.now() - datetime.timedelta(days=180)).strftime('%Y-%m-%d')
+        self.end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+        self.current_date = self.start_date
 
     def get_stock_price(self, ticker):
         try:
             stock = yf.Ticker(ticker)
-            data = stock.history(period='1d')
-            return round(data['Close'].iloc[-1], 2)
+            data = stock.history(start=self.start_date, end=self.end_date)
+            if self.current_date in data.index:
+                return round(data.loc[self.current_date]['Close'], 2)
+            return None
         except Exception as e:
             print(f"Error fetching stock price: {e}")
             return None
@@ -38,8 +43,7 @@ class Simulator:
             self.portfolio[ticker] = {'quantity': quantity, 'avg_price': price}
 
         self.transaction_history.append(
-            {'type': 'buy', 'ticker': ticker, 'quantity': quantity, 'price': price, 'date': datetime.datetime.now()})
-
+            {'type': 'buy', 'ticker': ticker, 'quantity': quantity, 'price': price, 'date': self.current_date})
         print(f"Bought {quantity} shares of {ticker} at ${price:.2f} each. Remaining balance: ${self.balance:.2f}")
 
     def sell_stock(self, ticker, quantity):
@@ -60,27 +64,8 @@ class Simulator:
             del self.portfolio[ticker]
 
         self.transaction_history.append(
-            {'type': 'sell', 'ticker': ticker, 'quantity': quantity, 'price': price, 'date': datetime.datetime.now()})
-
+            {'type': 'sell', 'ticker': ticker, 'quantity': quantity, 'price': price, 'date': self.current_date})
         print(f"Sold {quantity} shares of {ticker} at ${price:.2f} each. New balance: ${self.balance:.2f}")
 
-    def view_portfolio(self):
-        print("\nCurrent Portfolio:")
-        if not self.portfolio:
-            print("You have no stocks in your portfolio.")
-            return
-
-        for ticker, info in self.portfolio.items():
-            print(f"- {ticker}: {info['quantity']} shares @ avg price ${info['avg_price']:.2f}")
-
-    def view_balance(self):
-        print(f"\nCurrent balance: ${self.balance:.2f}")
-
-    def view_transaction_history(self):
-        print("\nTransaction History:")
-        if not self.transaction_history:
-            print("No transactions yet.")
-            return
-
-        for transaction in self.transaction_history:
-            print(f"- {transaction['date']} | {transaction['type'].capitalize()} | {transaction['ticker']} | {transaction['quantity']} shares @ ${transaction['price']:.2f}")
+    def advance_date(self):
+        self.current_date = (datetime.datetime.strptime(self.current_date, '%Y-%m-%d') + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
