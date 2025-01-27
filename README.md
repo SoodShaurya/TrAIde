@@ -45,9 +45,14 @@ TrAIde is a comprehensive tool designed to analyze market sentiment and automate
 
 ### TODO
 
+- Write an algorithm to make a decision to sell/buy and how many to sell/buy.
+  - Use stock trend for day, week, and month.
+  - Use average sentiment for day and week.
+  - Tweak weight values.
+
 - Implement a weightage system for more influential people and higher comment scores.
 - Implement scraping from facebook groups.
-- Implement scraping of stocks by name in addition to symbol.;
+- Implement scraping of stocks by name in addition to symbol.
 
 #### Low Priority
 
