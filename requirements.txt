@@ -1,13 +1,11 @@
 # requirements.txt
-praw
-pandas
-requests
-pymongo
-transformers
-torch
-tensorflow
-datetime
-fastapi 
 uvicorn
-tf-keras
-yfinance
+pymongo
+numpy
+pandas
+joblib
+sambo
+bokeh
+praw
+transformers
+fastapi
