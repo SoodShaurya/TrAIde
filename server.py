@@ -4,11 +4,11 @@ import asyncio
 
 from config.__init__ import load_config
 
-from src.scrapers.reddit_scraper import RedditScraper
-from src.backend.models import SentimentAnalyzer
-from src.scrapers.data_processor import DataProcessor
-from src.backend.symbol_manager import SymbolManager
-from src.backend.api import API
+from daita.scrapers.reddit_scraper import RedditScraper
+from daita.backend.models import SentimentAnalyzer
+from daita.scrapers.data_processor import DataProcessor
+from daita.backend.symbol_manager import SymbolManager
+from daita.backend.api import API
 
 from utils.logger import setup_logger
 from utils.mongo import initialize_mongodb

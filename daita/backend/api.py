@@ -1,4 +1,4 @@
-# src/api.py
+# daita/api.py
 from datetime import datetime, timedelta
 from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.responses import JSONResponse
@@ -27,6 +27,24 @@ class API:
             raise HTTPException(status_code=500, detail=f"Database error: {str(db_error)}")
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error retrieving ticker data: {str(e)}")
+
+    def get_sentiment(self, ticker: str, start_timestamp: int = 1723119919, end_timestamp: int = datetime.now().timestamp()):
+        try:
+            start_timestamp = int(start_timestamp)
+            end_timestamp = int(end_timestamp)
+
+            aggregation = self.collection.aggregate([
+                {'$match': {'tickers': ticker, "timestamp": { "$gte": start_timestamp, "$lte": end_timestamp }}},
+                {'$group': {"_id": None, "avg_score": {"$avg": "$compound_score"}}}
+            ])
+            results = list(aggregation)
+            if not results:
+                raise HTTPException(status_code=404, detail="No sentiment data found for the given ticker.")
+            return JSONResponse(content=results)
+        except PyMongoError as db_error:
+            raise HTTPException(status_code=500, detail=f"Database error: {str(db_error)}")
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error retrieving sentiment data: {str(e)}")
         
     def match(self, match: str, key: str):
         try:
@@ -82,6 +100,60 @@ class API:
         
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error sorting daily upvotes: {str(e)}")
+    
+    def sort_alltime_sentiment(self):
+        try:
+            aggregation = self.collection.aggregate([
+                {'$group': {'_id': '$tickers', 'avg_sentiment': {'$avg': '$compound_score'}}},
+                {'$sort': {'avg_sentiment': -1}}
+            ])
+            items = [item for item in aggregation if len(item['_id']) == 1]
+            if not items:
+                raise HTTPException(status_code=404, detail="No data available.")
+            return JSONResponse(content=items)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error sorting sentiment: {str(e)}")
+        
+    def sort_daily_sentiment(self, timestamp):
+        try:
+            timestamp = int(timestamp)
+            # Convert Unix timestamp to datetime
+            input_datetime = datetime.fromtimestamp(timestamp)
+            
+            # Calculate the start and end of the day
+            start_of_day = input_datetime.replace(hour=0, minute=0, second=0, microsecond=0)
+            end_of_day = start_of_day + timedelta(days=1)
+            
+            # Convert back to Unix timestamps
+            start_timestamp = start_of_day.timestamp()
+            end_timestamp = end_of_day.timestamp()
+            
+            aggregation = self.collection.aggregate([
+                {'$match': {'timestamp': {'$gte': start_timestamp, '$lt': end_timestamp}}},
+                {'$group': {'_id': '$tickers', 'avg_sentiment': {'$avg': '$compound_score'}}},
+                {'$sort': {'avg_sentiment': -1}}
+            ])
+            
+            items = [item for item in aggregation if len(item['_id']) == 1]
+            
+            if not items:
+                raise HTTPException(status_code=404, detail="No data available for the specified day.")
+            
+            return JSONResponse(content=items)
+        
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error sorting daily sentiment: {str(e)}")
+
+    def get_oldest_timestamp(self):
+        try:
+            result = self.collection.find_one(sort=[("timestamp", 1)])
+            if not result:
+                raise HTTPException(status_code=404, detail="No data available.")
+            return JSONResponse(content={"oldest_timestamp": result["timestamp"]})
+        except PyMongoError as db_error:
+            raise HTTPException(status_code=500, detail=f"Database error: {str(db_error)}")
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error retrieving oldest timestamp: {str(e)}")
 
     def _create_routes(self):
         router = APIRouter(prefix="/api/v1")

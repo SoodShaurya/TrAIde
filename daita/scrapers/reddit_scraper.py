@@ -1,4 +1,4 @@
-# src/reddit_scraper.py
+# daita/reddit_scraper.py
 import praw
 import logging
 import time
@@ -64,7 +64,7 @@ class RedditScraper:
 
     def stream_submissions(self, subreddit):
         try:
-            for submission in subreddit.stream.submissions(skip_existing=True):
+            for submission in subreddit.stream.submissions(skip_existing=False):
                 if self.data_processor.item_exists(submission.id):
                     logging.info(f"Skipping post {submission.id}")
                 else:
@@ -74,7 +74,7 @@ class RedditScraper:
 
     def stream_comments(self, subreddit):
         try:
-            for comment in subreddit.stream.comments(skip_existing=True):
+            for comment in subreddit.stream.comments(skip_existing=False):
                 if self.data_processor.item_exists(comment.id):
                     logging.info(f"Skipping comment {comment.id}")
                 else:     

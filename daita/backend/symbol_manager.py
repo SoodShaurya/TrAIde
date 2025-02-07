@@ -1,4 +1,4 @@
-# src/stock_manager.py
+# daita/stock_manager.py
 import pandas as pd
 import logging
 import time
