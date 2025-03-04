@@ -7,6 +7,7 @@ reports/*
 */.DS_STORE
 .DS_STORE
 test.py
+test*.py
 *.pyc
 data/*
 venv/
