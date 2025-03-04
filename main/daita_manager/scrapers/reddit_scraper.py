@@ -1,4 +1,4 @@
-# daita/reddit_scraper.py
+# daita_manager/reddit_scraper.py
 import praw
 import logging
 import time

@@ -9,3 +9,4 @@ reports/*
 test.py
 *.pyc
 data/*
+venv/

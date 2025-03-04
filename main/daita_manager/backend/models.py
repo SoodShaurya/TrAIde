@@ -1,4 +1,4 @@
-# daita/models.py
+# daita_manager/models.py
 import logging
 
 from transformers import pipeline
