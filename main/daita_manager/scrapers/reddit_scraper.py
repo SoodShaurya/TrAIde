@@ -13,7 +13,7 @@ class RedditScraper:
             client_secret=reddit_config['client_secret'],
             user_agent=reddit_config['user_agent']
         )
-        with open("data/symbols_data.txt", "r") as file:
+        with open("./main/daita_manager/data/symbols_data.txt", "r") as file:
             self.stock_symbols = {line.strip() for line in file}
             file.close()
         self.subreddits = reddit_config['subreddits'].split(',')
