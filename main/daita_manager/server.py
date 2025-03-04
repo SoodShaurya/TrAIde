@@ -16,12 +16,14 @@ from utils.mongo import initialize_mongodb
 HOST = "127.0.0.1"
 PORT = 8027
 
+
 def setup():
     setup_logger()
     config = load_config()
     collection = initialize_mongodb(config["MONGODB"]["port"])
     stock_manager = SymbolManager(config)
     return API(collection), config, collection, stock_manager
+
 
 async def stream_data(config, collection):
     try:
@@ -34,6 +36,7 @@ async def stream_data(config, collection):
         logging.error(f"Streaming failed: {e}")
         raise
 
+
 async def retrieve_symbols(stock_manager: SymbolManager):
     while True:
         try:
@@ -44,27 +47,30 @@ async def retrieve_symbols(stock_manager: SymbolManager):
             logging.error(f"Error in retrieve_symbols: {e}")
             await asyncio.sleep(60)
 
+
 async def run_server(app):
     try:
         config = uvicorn.Config(app(), host=HOST, port=PORT, reload=True)
         server = uvicorn.Server(config)
-        logging.info(f"Starting API server...: {HOST+':'+str(PORT)}")
+        logging.info(f"Starting API server...: {HOST + ':' + str(PORT)}")
         await server.serve()
     except Exception as e:
         logging.error(f"API server failed: {e}")
         raise
 
+
 async def main():
     try:
         app, config, collection, stock_manager = setup()
         await asyncio.gather(
-            run_server(app),
+            # run_server(app),
             stream_data(config, collection),
-            retrieve_symbols(stock_manager)  # Run the symbols update loop
+            # retrieve_symbols(stock_manager)  # Run the symbols update loop
         )
     except Exception as e:
         logging.critical(f"Main execution failed: {e}")
         raise
+
 
 if __name__ == "__main__":
     asyncio.run(main())
